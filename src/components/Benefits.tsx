@@ -1,25 +1,25 @@
-import { Heart, Award, Sparkles, Clock } from "lucide-react";
+import { Zap, Shield, Map, DollarSign } from "lucide-react";
 
 const benefits = [
   {
-    icon: Heart,
-    title: "Atendimento Personalizado",
-    description: "Cada cliente é única e merece um design exclusivo para seu olhar"
+    icon: Zap,
+    title: "Atendimento Rápido",
+    description: "Resposta ágil e eficiente para suas necessidades de transporte"
   },
   {
-    icon: Award,
-    title: "Materiais de Qualidade",
-    description: "Utilizo apenas produtos premium e certificados para garantir segurança"
+    icon: Shield,
+    title: "Frota Moderna e Segura",
+    description: "Veículos equipados e rastreados para máxima segurança da sua carga"
   },
   {
-    icon: Sparkles,
-    title: "Resultado Natural",
-    description: "Técnicas modernas para um efeito elegante e sofisticado"
+    icon: Map,
+    title: "Cobertura Nacional",
+    description: "Atendemos todo o território brasileiro com excelência"
   },
   {
-    icon: Clock,
-    title: "Longa Duração",
-    description: "Cílios bonitos por mais tempo com a manutenção adequada"
+    icon: DollarSign,
+    title: "Preço Justo",
+    description: "Melhor custo-benefício sem comprometer a qualidade do serviço"
   }
 ];
 
@@ -29,10 +29,10 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Por Que Escolher?
+            Por Que Escolher a VTS TRANSPORTE?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Diferenciais que fazem toda a diferença
+            Diferenciais que fazem toda a diferença no seu transporte
           </p>
         </div>
 

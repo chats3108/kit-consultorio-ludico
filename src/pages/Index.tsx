@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
-import Gallery from "@/components/Gallery";
+import QuoteForm from "@/components/QuoteForm";
 import Benefits from "@/components/Benefits";
+import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -13,9 +13,9 @@ const Index = () => {
       <Hero />
       <About />
       <Services />
-      <Testimonials />
-      <Gallery />
+      <QuoteForm />
       <Benefits />
+      <Testimonials />
       <CTA />
       <Footer />
     </div>

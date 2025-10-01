@@ -1,30 +1,26 @@
-import { Sparkles, Eye, Star, Wand2 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Truck, Package, MapPin, Settings } from "lucide-react";
 
 const services = [
   {
-    icon: Eye,
-    title: "Alongamento Clássico",
-    description: "Resultado natural e elegante, perfeito para o dia a dia. Uma extensão por fio natural.",
-    features: ["Efeito natural", "Longa duração", "Ideal para iniciantes"]
+    icon: Truck,
+    title: "Carga Dedicada",
+    description: "Veículo exclusivo para sua carga, garantindo agilidade e segurança no transporte"
   },
   {
-    icon: Sparkles,
-    title: "Volume Russo",
-    description: "Máximo volume e glamour! Múltiplas extensões ultra finas por fio natural.",
-    features: ["Efeito dramático", "Máximo volume", "Look deslumbrante"]
+    icon: Package,
+    title: "Carga Fracionada",
+    description: "Compartilhamento de espaço otimizado, ideal para cargas menores com melhor custo-benefício"
   },
   {
-    icon: Star,
-    title: "Volume Híbrido",
-    description: "O melhor dos dois mundos: naturalidade e volume na medida certa.",
-    features: ["Equilíbrio perfeito", "Versátil", "Resultado sofisticado"]
+    icon: MapPin,
+    title: "Coleta e Entrega Nacional",
+    description: "Cobertura completa em todo o território brasileiro com rastreamento em tempo real"
   },
   {
-    icon: Wand2,
-    title: "Manutenção",
-    description: "Mantenha seus cílios sempre perfeitos com sessões de preenchimento regulares.",
-    features: ["Manutenção regular", "Preserva resultado", "Economia"]
+    icon: Settings,
+    title: "Logística Personalizada",
+    description: "Soluções customizadas para atender às necessidades específicas do seu negócio"
   }
 ];
 
@@ -34,10 +30,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Serviços Oferecidos
+            Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Técnicas modernas e personalizadas para realçar seu olhar
+            Soluções completas em transporte de cargas para todo o Brasil
           </p>
         </div>
 
@@ -45,27 +41,19 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="group hover:shadow-soft transition-all duration-300 hover:scale-105 animate-fade-in-up border-2 border-border bg-card"
+              className="animate-fade-in-up hover:shadow-soft transition-all duration-300 hover:scale-105 border-border"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
-                <div className="w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-7 w-7 text-white" />
+                <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <service.icon className="h-7 w-7 text-primary" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
                 <CardDescription className="text-base">
                   {service.description}
                 </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
               </CardContent>
             </Card>
           ))}

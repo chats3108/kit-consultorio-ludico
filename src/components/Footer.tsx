@@ -1,7 +1,7 @@
-import { Instagram, MessageCircle } from "lucide-react";
+import { MessageCircle, Mail } from "lucide-react";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/5513974075460";
+  const whatsappLink = "https://wa.me/5513974163806";
 
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             {/* Brand */}
             <div>
-              <h3 className="text-2xl font-bold mb-3">Lash Design</h3>
+              <h3 className="text-2xl font-bold mb-3">VTS TRANSPORTE</h3>
               <p className="text-secondary-foreground/80 text-sm">
-                Realçando sua beleza natural com técnicas modernas e atendimento personalizado.
+                Transporte de cargas para todo o Brasil com segurança, agilidade e profissionalismo.
               </p>
             </div>
 
@@ -27,28 +27,32 @@ const Footer = () => {
                   className="flex items-center justify-center md:justify-start text-secondary-foreground/80 hover:text-white transition-colors"
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
-                  <span className="text-sm">(13) 97407-5460</span>
+                  <span className="text-sm">(13) 97416-3806</span>
+                </a>
+                <a 
+                  href="mailto:contato@vtstransporte.com.br"
+                  className="flex items-center justify-center md:justify-start text-secondary-foreground/80 hover:text-white transition-colors"
+                >
+                  <Mail className="h-4 w-4 mr-2" />
+                  <span className="text-sm">contato@vtstransporte.com.br</span>
                 </a>
               </div>
             </div>
 
-            {/* Social */}
+            {/* Services */}
             <div>
-              <h4 className="font-semibold mb-3 text-lg">Redes Sociais</h4>
-              <div className="flex justify-center md:justify-start space-x-4">
-                <a 
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-              </div>
+              <h4 className="font-semibold mb-3 text-lg">Serviços</h4>
+              <ul className="space-y-2 text-sm text-secondary-foreground/80">
+                <li>Carga Dedicada</li>
+                <li>Carga Fracionada</li>
+                <li>Cobertura Nacional</li>
+                <li>Logística Personalizada</li>
+              </ul>
             </div>
           </div>
 
           <div className="border-t border-white/10 mt-10 pt-8 text-center text-sm text-secondary-foreground/60">
-            <p>© 2025 Lash Design. Todos os direitos reservados.</p>
+            <p>© 2025 VTS TRANSPORTE. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

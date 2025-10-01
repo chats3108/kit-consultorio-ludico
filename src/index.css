@@ -17,12 +17,12 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Rosa vibrante como cor principal */
-    --primary: 330 100% 71%;
+    /* Azul escuro corporativo como cor principal */
+    --primary: 221 68% 32%;
     --primary-foreground: 0 0% 100%;
     
-    /* Rosa mais suave para hover */
-    --primary-hover: 330 100% 65%;
+    /* Azul mais claro para hover */
+    --primary-hover: 221 68% 40%;
 
     /* Cinza médio */
     --secondary: 0 0% 33%;
@@ -32,25 +32,25 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
 
-    /* Rosa suave para acentos */
-    --accent: 330 100% 95%;
-    --accent-foreground: 330 100% 40%;
+    /* Azul claro para acentos */
+    --accent: 221 68% 95%;
+    --accent-foreground: 221 68% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 330 100% 71%;
+    --ring: 221 68% 32%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, hsl(330 100% 71%), hsl(330 100% 80%));
-    --gradient-hero: linear-gradient(135deg, hsl(330 100% 71% / 0.95), hsl(330 80% 60% / 0.95));
+    --gradient-primary: linear-gradient(135deg, hsl(221 68% 32%), hsl(221 68% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(221 68% 32% / 0.95), hsl(221 60% 40% / 0.95));
     
-    /* Sombras elegantes */
-    --shadow-soft: 0 4px 20px hsl(330 100% 71% / 0.15);
+    /* Sombras corporativas */
+    --shadow-soft: 0 4px 20px hsl(221 68% 32% / 0.15);
     --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.05);
     
     /* Transições suaves */
