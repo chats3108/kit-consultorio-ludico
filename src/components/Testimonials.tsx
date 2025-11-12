@@ -24,18 +24,18 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="depoimentos" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+    <section id="depoimentos" className="py-12 md:py-20 bg-background">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 text-foreground">
             O Que Nossos Clientes Dizem
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground px-4">
             Confiança conquistada através de entregas bem-sucedidas
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
@@ -48,12 +48,12 @@ const Testimonials = () => {
                     <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 italic">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 italic leading-relaxed">
                   "{testimonial.comment}"
                 </p>
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                  <p className="font-semibold text-foreground text-sm md:text-base">{testimonial.name}</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">{testimonial.company}</p>
                 </div>
               </CardContent>
             </Card>

@@ -4,21 +4,21 @@ const Footer = () => {
   const whatsappLink = "https://wa.me/5513974163806";
 
   return (
-    <footer className="bg-secondary text-secondary-foreground py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-secondary text-secondary-foreground py-10 md:py-12">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
             {/* Brand */}
-            <div>
-              <h3 className="text-2xl font-bold mb-3">VTS TRANSPORTE</h3>
-              <p className="text-secondary-foreground/80 text-sm">
+            <div className="sm:col-span-2 md:col-span-1">
+              <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">VTS TRANSPORTE</h3>
+              <p className="text-secondary-foreground/80 text-sm max-w-xs mx-auto sm:mx-0">
                 Transporte de cargas para todo o Brasil com segurança, agilidade e profissionalismo.
               </p>
             </div>
 
             {/* Contact */}
             <div>
-              <h4 className="font-semibold mb-3 text-lg">Contato</h4>
+              <h4 className="font-semibold mb-2 md:mb-3 text-base md:text-lg">Contato</h4>
               <div className="space-y-2">
                 <a 
                   href={whatsappLink}
@@ -41,7 +41,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="font-semibold mb-3 text-lg">Serviços</h4>
+              <h4 className="font-semibold mb-2 md:mb-3 text-base md:text-lg">Serviços</h4>
               <ul className="space-y-2 text-sm text-secondary-foreground/80">
                 <li>Carga Dedicada</li>
                 <li>Carga Fracionada</li>
