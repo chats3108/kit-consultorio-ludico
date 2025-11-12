@@ -9,49 +9,49 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 20%;
+    --foreground: 222 47% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 222 47% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 222 47% 20%;
 
     /* Azul escuro corporativo como cor principal */
-    --primary: 221 68% 32%;
+    --primary: 221 83% 35%;
     --primary-foreground: 0 0% 100%;
     
     /* Azul mais claro para hover */
-    --primary-hover: 221 68% 40%;
+    --primary-hover: 221 83% 30%;
 
-    /* Cinza médio */
-    --secondary: 0 0% 33%;
+    /* Cinza escuro corporativo */
+    --secondary: 222 47% 15%;
     --secondary-foreground: 0 0% 100%;
 
     /* Cinza claro */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Azul claro para acentos */
-    --accent: 221 68% 95%;
-    --accent-foreground: 221 68% 30%;
+    /* Azul muito claro para acentos */
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 20%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 221 68% 32%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 35%;
 
     --radius: 0.5rem;
 
-    /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, hsl(221 68% 32%), hsl(221 68% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(221 68% 32% / 0.95), hsl(221 60% 40% / 0.95));
+    /* Gradientes profissionais */
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 35%) 0%, hsl(221 83% 30%) 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(30, 58, 138, 0.90) 0%, rgba(15, 23, 42, 0.85) 100%);
     
     /* Sombras corporativas */
-    --shadow-soft: 0 4px 20px hsl(221 68% 32% / 0.15);
-    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.05);
+    --shadow-soft: 0 4px 20px rgba(30, 58, 138, 0.08);
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
     
     /* Transições suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

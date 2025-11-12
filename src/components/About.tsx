@@ -2,7 +2,7 @@ import warehouseImage from "@/assets/logistics-warehouse.jpg";
 
 const About = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="sobre" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Photo */}
