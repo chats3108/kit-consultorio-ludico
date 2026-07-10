@@ -334,20 +334,18 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
 
   .marquee-secao{
     margin-top: 44px;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
   }
+  .marquee-secao::-webkit-scrollbar{ display:none; }
   .marquee-trilho{
     display:flex;
     gap: 18px;
     width: max-content;
-    animation: rolar-recursos 34s linear infinite;
-  }
-  .marquee-secao:hover .marquee-trilho{ animation-play-state: paused; }
-  @keyframes rolar-recursos{
-    from{ transform: translateX(0); }
-    to{ transform: translateX(-50%); }
   }
   .marquee-item{
     flex: 0 0 auto;
@@ -956,8 +954,7 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
   @media (prefers-reduced-motion: reduce){
     *{ transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
     html{ scroll-behavior:auto; }
-    .marquee-trilho{ animation: none !important; }
-    .marquee-secao{ overflow-x: auto; -webkit-mask-image:none; mask-image:none; }
+    .marquee-secao{ -webkit-mask-image:none; mask-image:none; }
   }
 
   :focus-visible{
@@ -1104,11 +1101,9 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     <h2 class="titulo-secao">Veja o kit por dentro</h2>
     <p class="subtitulo-secao">Uma prévia dos recursos prontos pra imprimir e levar direto pra sessão</p>
 
-    <!-- Carrossel com scroll automático (loop contínuo). O conjunto de 6 recursos se repete
-         uma vez no HTML para o loop ficar perfeitamente contínuo — ao passar o mouse, pausa.
-         A ficha "Pessoas" foi retirada daqui por destoar visualmente das demais (fundo em
-         padrão xadrez e ilustração em outro estilo); as outras 6 seguem o mesmo padrão flat/colorido. -->
-    <div class="marquee-secao">
+    <!-- Carrossel com scroll automático via JS (ver script no final da página).
+         6 fichas únicas, sem duplicação — pausa ao passar o mouse ou tocar. -->
+    <div class="marquee-secao" id="marquee-recursos">
       <div class="marquee-trilho">
         <article class="marquee-item">
           <img src="images/atv-psi-1.webp" alt="Ficha Roda das Emoções">
@@ -1132,30 +1127,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
         </article>
         <article class="marquee-item">
           <img src="images/foto-3.webp" alt="Ficha Como Eu Posso Me Regular">
-          <div class="marquee-texto"><h3>Como Eu Posso Me Regular</h3><p>Sinaliza o nível de regulação com cores, como um semáforo</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/atv-psi-1.webp" alt="" loading="lazy">
-          <div class="marquee-texto"><h3>Roda das Emoções</h3><p>Nomear o que sente sem precisar explicar com palavras</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/atv-psi-2.webp" alt="" loading="lazy">
-          <div class="marquee-texto"><h3>Termômetro da Ansiedade</h3><p>Mede a intensidade antes que a criança se desregule</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/atv-psi-3.webp" alt="" loading="lazy">
-          <div class="marquee-texto"><h3>Labirinto da Calma</h3><p>Respiração e foco em forma de jogo</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/atv-psi-4.webp" alt="" loading="lazy">
-          <div class="marquee-texto"><h3>Pote das Lembranças</h3><p>Acolhe o luto com um exercício visual e afetivo</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/atv-psi-5.webp" alt="" loading="lazy">
-          <div class="marquee-texto"><h3>Baralho de Sentimentos</h3><p>Nomeia e conversa sobre 8 sentimentos diferentes</p></div>
-        </article>
-        <article class="marquee-item" aria-hidden="true">
-          <img src="images/foto-3.webp" alt="" loading="lazy">
           <div class="marquee-texto"><h3>Como Eu Posso Me Regular</h3><p>Sinaliza o nível de regulação com cores, como um semáforo</p></div>
         </article>
       </div>
@@ -1550,6 +1521,27 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
       }
     });
   });
+
+  /* ---------- Scroll automático dos recursos (Veja o kit por dentro) ---------- */
+  var marqueeSecao = document.getElementById('marquee-recursos');
+  if (marqueeSecao && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var marqueePausado = false;
+    marqueeSecao.addEventListener('mouseenter', function(){ marqueePausado = true; });
+    marqueeSecao.addEventListener('mouseleave', function(){ marqueePausado = false; });
+    marqueeSecao.addEventListener('touchstart', function(){ marqueePausado = true; }, { passive: true });
+    marqueeSecao.addEventListener('touchend', function(){ setTimeout(function(){ marqueePausado = false; }, 2500); }, { passive: true });
+
+    setInterval(function(){
+      if (marqueePausado) return;
+      var maximo = marqueeSecao.scrollWidth - marqueeSecao.clientWidth;
+      if (maximo <= 0) return;
+      if (marqueeSecao.scrollLeft >= maximo - 1){
+        marqueeSecao.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        marqueeSecao.scrollLeft += 1;
+      }
+    }, 30);
+  }
 
   /* ---------- Carrossel de depoimentos ---------- */
   var trilho = document.getElementById('trilho-depoimentos');
