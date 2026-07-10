@@ -1,0 +1,1611 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '865072146358418');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Utmify UTMs -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<!-- End Utmify UTMs -->
+
+<!-- Utmify Pixel -->
+<script>
+  window.pixelId = "6a514ffc83ab0e4d311277c7";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- End Utmify Pixel -->
+
+<title>Kit Consultório Lúdico — Recursos terapêuticos para psicólogas infantis</title>
+<meta name="description" content="+80 recursos terapêuticos prontos pra imprimir e aplicar. Organizados por demanda: ansiedade, TDAH, luto, comportamento. Acesso imediato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     DESIGN TOKENS
+  ============================================ */
+  :root{
+    --verde: #1C6E62;
+    --verde-claro: #1F7A6C;
+    --verde-escuro: #14504A;
+    --coral: #E14F3D;
+    --creme: #FBF2E9;
+    --creme-escuro: #F5EDE1;
+    --tinta: #22302A;
+    --mostarda: #F4A93B;
+    --branco: #FFFFFF;
+
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-corpo: 'Poppins', sans-serif;
+
+    --r-sm: 14px;
+    --r-md: 18px;
+    --r-lg: 24px;
+    --r-pill: 999px;
+
+    --sombra: 0 10px 28px rgba(28, 40, 34, 0.10);
+    --sombra-forte: 0 20px 48px rgba(28, 40, 34, 0.16);
+
+    /* sombras "clay": camada de contato + camada difusa, dão volume sem virar sombra dura */
+    --clay: 0 3px 0 rgba(28,40,34,0.14), 0 14px 26px rgba(28,40,34,0.14);
+    --clay-lg: 0 4px 0 rgba(28,40,34,0.16), 0 22px 40px rgba(28,40,34,0.16);
+    --clay-inset: inset 0 2px 0 rgba(255,255,255,0.55), inset 0 -3px 6px rgba(28,40,34,0.05);
+
+    --largura-max: 1140px;
+  }
+
+  *,*::before,*::after{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    font-family: var(--fonte-corpo);
+    color: var(--tinta);
+    background: var(--creme);
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+  img{ max-width:100%; display:block; }
+  h1,h2,h3,h4{ font-family: var(--fonte-titulo); margin:0; color: var(--tinta); line-height:1.15; }
+  p{ margin:0; }
+  ul{ margin:0; padding:0; list-style:none; }
+  a{ color:inherit; }
+  button{ font-family: inherit; cursor:pointer; }
+
+  .wrap{
+    width:100%;
+    max-width: var(--largura-max);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  section{ padding: 64px 0; }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background: rgba(28,110,98,0.09);
+    color: var(--verde);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding: 8px 18px;
+    border-radius: var(--r-pill);
+  }
+
+  .titulo-secao{
+    font-size: clamp(26px, 4.5vw, 38px);
+    font-weight: 700;
+    text-align:center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .subtitulo-secao{
+    text-align:center;
+    max-width: 560px;
+    margin: 14px auto 0;
+    color: #4C5C54;
+    font-size: 16px;
+  }
+
+  /* ============================================
+     BOTÕES
+  ============================================ */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    padding: 16px 30px;
+    border-radius: var(--r-pill);
+    border: 2.5px solid transparent;
+    text-decoration:none;
+    transition: transform .15s cubic-bezier(.34,1.56,.64,1), box-shadow .15s ease, background-color .15s ease;
+    white-space: nowrap;
+  }
+  .btn svg{ flex-shrink:0; }
+  .btn-primario{
+    background: var(--verde);
+    color: var(--branco);
+    border-color: var(--verde-escuro);
+    box-shadow: var(--clay);
+  }
+  .btn-primario:hover{ background: var(--verde-claro); transform: translateY(-2px); }
+  .btn-primario:active{ transform: translateY(1px) scale(.98); box-shadow: 0 1px 0 rgba(28,40,34,0.14), 0 6px 14px rgba(28,40,34,0.14); }
+  .btn-branco{
+    background: var(--branco);
+    color: var(--verde-escuro);
+    border-color: var(--creme-escuro);
+    box-shadow: var(--clay);
+  }
+  .btn-branco:hover{ transform: translateY(-2px); }
+  .btn-branco:active{ transform: translateY(1px) scale(.98); }
+  .btn-contorno{
+    background: var(--branco);
+    color: var(--verde-escuro);
+    border: 2.5px solid var(--verde-escuro);
+    box-shadow: 0 3px 0 rgba(28,40,34,0.10);
+  }
+  .btn-contorno:hover{ background: var(--verde-escuro); color: var(--branco); transform: translateY(-2px); }
+  .btn-contorno:active{ transform: translateY(1px) scale(.98); }
+  .btn-bloco{ width:100%; }
+  .centralizar-btn{ display:flex; justify-content:center; margin-top: 36px; }
+
+  .selos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 22px;
+    margin-top: 22px;
+  }
+  .selo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #52625A;
+  }
+  .selo svg{ color: var(--verde); flex-shrink:0; }
+
+  /* ============================================
+     BARRA DE URGÊNCIA
+  ============================================ */
+  .barra-urgencia{
+    background: var(--coral);
+    color: var(--branco);
+    text-align:center;
+    padding: 11px 14px;
+    font-size: 13.5px;
+    font-weight: 600;
+    position: sticky;
+    top:0;
+    z-index: 60;
+  }
+  .barra-urgencia strong{ font-family: var(--fonte-titulo); letter-spacing:0.03em; }
+  #cronometro{ font-variant-numeric: tabular-nums; }
+
+  /* ============================================
+     DIVISOR SERRILHADO (assinatura visual)
+     imita a borda picotada de uma folha destacável
+  ============================================ */
+  .divisor{
+    display:block;
+    width:100%;
+    height: 22px;
+    margin-top:-1px;
+  }
+
+  /* ============================================
+     HERO
+  ============================================ */
+  .hero{
+    padding: 52px 0 60px;
+    background:
+      radial-gradient(55% 45% at 50% 0%, rgba(28,110,98,0.06), transparent 65%),
+      var(--branco);
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items:center;
+  }
+  .hero-texto{ text-align:center; max-width: 720px; margin: 0 auto; }
+  .hero h1{
+    font-size: clamp(30px, 6.4vw, 46px);
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    letter-spacing: -0.01em;
+  }
+  .destaque{
+    color: var(--verde);
+  }
+  .hero-sub{
+    margin: 18px auto 0;
+    max-width: 540px;
+    font-size: 17px;
+    color: #46564D;
+  }
+  .lista-beneficios{
+    margin: 28px auto 0;
+    max-width: 640px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    row-gap: 12px;
+    column-gap: 24px;
+  }
+  .lista-beneficios li{
+    display:flex;
+    align-items:center;
+    gap: 8px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #33423A;
+  }
+  .lista-beneficios li svg{
+    flex-shrink:0;
+    color: var(--verde);
+  }
+  .check-icone{
+    flex-shrink:0;
+    width: 22px; height: 22px;
+    border-radius:50%;
+    background: var(--verde);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1px;
+  }
+  .hero-cta{ margin-top: 30px; }
+
+  .hero-visual{
+    display:flex;
+    justify-content:center;
+    margin-top: 8px;
+  }
+  .mockup-produto{
+    position:relative;
+    width: 100%;
+    max-width: 420px;
+    padding: 36px 30px 30px;
+  }
+  .mockup-produto .capa-kit{
+    position:relative;
+    z-index: 3;
+    width: 100%;
+    display:block;
+    filter: drop-shadow(0 18px 30px rgba(20,80,74,0.24));
+  }
+  .mockup-produto .folha-atras{
+    position:absolute;
+    width: 54%;
+    border-radius: var(--r-md);
+    box-shadow: var(--clay-lg);
+    border: 3px solid var(--branco);
+    background: var(--branco);
+  }
+  .mockup-produto .folha-1{ top: 4px; left: 0; z-index:1; transform: rotate(-8deg); }
+  .mockup-produto .folha-2{ bottom: 4px; right: 0; z-index:2; transform: rotate(7deg); }
+
+  /* ============================================
+     GRID GENÉRICO
+  ============================================ */
+  .secao-creme{ background: var(--creme); }
+  .secao-creme-escuro{ background: var(--creme-escuro); }
+
+  .marquee-secao{
+    margin-top: 44px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+  .marquee-trilho{
+    display:flex;
+    gap: 18px;
+    width: max-content;
+    animation: rolar-recursos 34s linear infinite;
+  }
+  .marquee-secao:hover .marquee-trilho{ animation-play-state: paused; }
+  @keyframes rolar-recursos{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+  .marquee-item{
+    flex: 0 0 auto;
+    width: 210px;
+    background: var(--branco);
+    border-radius: var(--r-lg);
+    border: 2.5px solid var(--creme-escuro);
+    box-shadow: var(--clay);
+    overflow: hidden;
+    text-align:center;
+  }
+  .marquee-item img{
+    width:100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+    display:block;
+  }
+  .marquee-item .marquee-texto{
+    padding: 14px 14px 16px;
+    min-height: 74px;
+  }
+  .marquee-item h3{
+    font-size: 14.5px;
+    font-weight: 700;
+  }
+  .marquee-item p{
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: #63736A;
+  }
+
+  /* ============================================
+     DOR / SITUAÇÕES
+  ============================================ */
+  .grid-dores{
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .cartao-dor{
+    background: var(--branco);
+    border-radius: var(--r-md);
+    padding: 20px 22px;
+    display:flex;
+    gap: 16px;
+    align-items:center;
+    transition: transform .2s ease, background-color .2s ease;
+  }
+  .cartao-dor:hover{ transform: translateY(-3px); background: #FFFDF9; }
+  .cartao-dor .icone-dor{
+    flex-shrink:0;
+    width: 26px; height:26px;
+    color: var(--verde);
+  }
+  .cartao-dor p{ font-weight:600; font-size:15px; color: var(--tinta); }
+
+  /* ============================================
+     BENEFÍCIOS DE VÍNCULO
+  ============================================ */
+  .grid-vinculo{
+    margin-top: 44px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .cartao-vinculo{
+    background: var(--branco);
+    border-radius: var(--r-lg);
+    padding: 28px 24px;
+    box-shadow: var(--clay);
+    border: 2.5px solid var(--creme-escuro);
+    transition: transform .2s ease, border-color .2s ease;
+  }
+  .cartao-vinculo:hover{ transform: translateY(-4px); border-color: var(--verde); }
+  .cartao-vinculo .icone-vinculo{
+    width: 52px; height:52px;
+    border-radius: 15px;
+    background: var(--verde);
+    border: 2.5px solid var(--verde-escuro);
+    box-shadow: var(--clay-inset);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom: 16px;
+  }
+  .cartao-vinculo h3{ font-size: 19px; }
+  .cartao-vinculo p{ margin-top:8px; font-size:14.5px; color:#5B6C63; }
+
+  /* ============================================
+     SEÇÃO PERDA (fundo escuro)
+  ============================================ */
+  .secao-perda{
+    background: var(--verde-escuro);
+    color: var(--creme);
+    text-align:center;
+  }
+  .secao-perda h2{
+    color: var(--branco);
+    font-size: clamp(26px, 4.5vw, 38px);
+    font-weight: 700;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .secao-perda p{
+    max-width: 560px;
+    margin: 18px auto 0;
+    color: rgba(251,242,233,0.82);
+    font-size: 16px;
+  }
+
+  /* ============================================
+     ENTREGÁVEIS + BÔNUS
+  ============================================ */
+  .bloco-entrega{
+    margin-top: 44px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items:center;
+  }
+  .entrega-produto{ display:flex; justify-content:center; }
+  .entrega-produto img{
+    max-width: 300px;
+    width: 100%;
+    filter: drop-shadow(0 16px 28px rgba(20,80,74,0.18));
+  }
+  .entrega-info{ text-align:center; }
+  .entrega-nome{ font-size: 22px; }
+  .entrega-tag{
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .lista-itens{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:column;
+    gap: 13px;
+    text-align:left;
+  }
+  .lista-itens li{
+    display:flex;
+    gap: 12px;
+    align-items:flex-start;
+    font-weight:600;
+    font-size: 14.5px;
+  }
+
+  .texto-ponte{
+    margin: 40px auto 0;
+    max-width: 620px;
+    text-align:center;
+    font-size: 15.5px;
+    color: #46564D;
+  }
+  .texto-reforco{
+    margin: 22px auto 0;
+    max-width: 540px;
+    text-align:center;
+    font-size: 14px;
+    color: #63736A;
+  }
+  .badge-bonus{
+    display:block;
+    width: fit-content;
+    margin: 16px auto 0;
+    background: var(--coral);
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.05em;
+    padding: 8px 18px;
+    border-radius: var(--r-pill);
+  }
+  .grid-bonus{
+    margin-top: 26px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .cartao-bonus{
+    background: var(--branco);
+    border-radius: var(--r-md);
+    padding: 18px 20px;
+    display:flex;
+    align-items:flex-start;
+    gap: 14px;
+    box-shadow: var(--clay);
+    border: 2.5px solid var(--branco);
+  }
+  .bonus-numero{
+    flex-shrink:0;
+    width: 34px; height:34px;
+    border-radius:50%;
+    background: var(--verde);
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 14px;
+  }
+  .bonus-texto{ flex:1; }
+  .bonus-texto strong{ display:block; font-size: 14.5px; }
+  .bonus-texto p{
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: #63736A;
+    font-weight: 500;
+  }
+  .bonus-preco{
+    margin-top: 8px;
+    display:flex;
+    align-items:baseline;
+    gap: 8px;
+  }
+  .bonus-preco .riscado{
+    text-decoration: line-through;
+    color: #97A69C;
+    font-size: 12.5px;
+  }
+  .bonus-preco .gratis{
+    color: var(--verde);
+    font-family: var(--fonte-titulo);
+    font-weight:700;
+    font-size: 13px;
+  }
+
+  /* ============================================
+     DEPOIMENTOS / CHAT
+  ============================================ */
+  .carrossel{
+    margin-top: 44px;
+    position:relative;
+  }
+  .carrossel-viewport{
+    overflow:hidden;
+  }
+  .carrossel-trilho{
+    display:flex;
+    transition: transform .4s ease;
+  }
+  .slide-depoimento{
+    flex: 0 0 100%;
+    padding: 0 6px;
+  }
+  .moldura-celular{
+    background: #16211D;
+    border-radius: 44px;
+    padding: 18px 12px 22px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: var(--clay-lg);
+    position:relative;
+    border: 2px solid #0D1512;
+  }
+  .moldura-celular::before{
+    content:"";
+    position:absolute;
+    top: 18px; left:50%; transform:translateX(-50%);
+    width: 66px; height:16px;
+    background:#0D1512;
+    border-radius: 0 0 14px 14px;
+    z-index:3;
+  }
+  .moldura-celular::after{
+    content:"";
+    position:absolute;
+    bottom: 8px; left:50%; transform:translateX(-50%);
+    width: 84px; height:4px;
+    background: rgba(255,255,255,0.35);
+    border-radius: var(--r-pill);
+  }
+  .chat-cartao{
+    background: var(--branco);
+    border-radius: 30px;
+    overflow:hidden;
+    line-height:0;
+  }
+  .chat-cartao img{ width:100%; }
+  .carrossel-nav{
+    display:flex;
+    justify-content:center;
+    gap: 16px;
+    margin-top: 22px;
+  }
+  .seta-carrossel{
+    width: 42px; height:42px;
+    border-radius:50%;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+    border:none;
+    display:flex; align-items:center; justify-content:center;
+    color: var(--verde-escuro);
+  }
+  .seta-carrossel:hover{ background: var(--verde); color:var(--branco); }
+  .carrossel-dots{
+    display:flex;
+    justify-content:center;
+    gap: 9px;
+    margin-top: 18px;
+  }
+  .carrossel-dots button{
+    width: 9px; height:9px;
+    border-radius:50%;
+    background: var(--creme-escuro);
+    border: none;
+    padding:0;
+    transition: background .2s ease, transform .2s ease;
+  }
+  .carrossel-dots button.ativo{
+    background: var(--verde);
+    transform: scale(1.25);
+  }
+  .link-oferta{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 6px;
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--verde);
+    text-decoration:none;
+  }
+  .link-oferta:hover{ color: var(--verde-escuro); }
+  .link-oferta svg{ transition: transform .2s ease; }
+  .link-oferta:hover svg{ transform: translateX(3px); }
+
+  /* ============================================
+     PREÇO
+  ============================================ */
+  .secao-preco{ background: var(--creme-escuro); }
+  .badge-oferta{
+    display:block;
+    text-align:center;
+    margin: 0 auto 16px;
+    width: fit-content;
+    background: var(--mostarda);
+    color: var(--verde-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.05em;
+    padding: 7px 16px;
+    border-radius: var(--r-pill);
+  }
+  .grid-precos{
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .cartao-preco{
+    background: var(--branco);
+    border-radius: var(--r-lg);
+    padding: 30px 26px;
+    box-shadow: var(--clay-lg);
+    border: 2.5px solid var(--branco);
+    position:relative;
+    overflow:hidden;
+  }
+  .cartao-preco h3{ font-size: 21px; }
+  .preco-original{
+    display:block;
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #97A69C;
+  }
+  .cartao-preco .valor{
+    margin-top: 2px;
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    font-size: 38px;
+    color: var(--verde-escuro);
+  }
+  .preco-parcela{
+    display:block;
+    margin-top: 6px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #7C8C83;
+  }
+  .imagem-produto{
+    margin: 20px 0 4px;
+    display:flex;
+    justify-content:center;
+  }
+  .imagem-produto img{
+    max-width: 190px;
+    width: 100%;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.28));
+  }
+  .cartao-preco .lista-precos{
+    margin: 22px 0 26px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+  }
+  .cartao-preco .lista-precos li{
+    display:flex;
+    gap:10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #46564D;
+  }
+  .cartao-preco.destaque{
+    background:
+      radial-gradient(circle at 18px 18px, rgba(255,255,255,0.05) 2px, transparent 2px) 0 0/22px 22px,
+      var(--verde-escuro);
+    color: var(--creme);
+    border-color: var(--mostarda);
+    transform: translateY(0) scale(1.02);
+  }
+  .cartao-preco.destaque h3{ color: var(--branco); }
+  .cartao-preco.destaque .valor{ color: var(--branco); }
+  .cartao-preco.destaque .preco-original{ color: rgba(251,242,233,0.55); }
+  .cartao-preco.destaque .preco-parcela{ color: rgba(251,242,233,0.75); }
+  .cartao-preco.destaque .lista-precos li{ color: rgba(251,242,233,0.88); }
+  .tag-melhor{
+    position:absolute;
+    top: 26px;
+    right: -46px;
+    width: 190px;
+    background: var(--coral);
+    color:var(--branco);
+    font-family: var(--fonte-titulo);
+    font-weight:700;
+    font-size:11.5px;
+    letter-spacing: 0.05em;
+    text-align:center;
+    padding: 7px 0;
+    transform: rotate(45deg);
+    transform-origin: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.22);
+    z-index: 5;
+  }
+  .btn-mostarda{
+    background: var(--mostarda);
+    color: var(--tinta);
+    border-color: #D9901E;
+    box-shadow: var(--clay);
+  }
+  .btn-mostarda:hover{ background:#F7B95E; transform: translateY(-2px); }
+  .btn-mostarda:active{ transform: translateY(1px) scale(.98); }
+
+  /* ============================================
+     GARANTIA
+  ============================================ */
+  .secao-garantia{
+    text-align:center;
+  }
+  .selo-garantia{
+    width: 132px; height:132px;
+    border-radius:50%;
+    background: var(--branco);
+    box-shadow: var(--sombra-forte);
+    margin: 0 auto 26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border: 3px dashed var(--mostarda);
+  }
+  .selo-garantia strong{
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    color: var(--verde-escuro);
+    line-height:1;
+  }
+  .selo-garantia span{
+    font-size: 11.5px;
+    font-weight:700;
+    color: #7C8C83;
+    margin-top:4px;
+  }
+  .secao-garantia p{
+    max-width: 480px;
+    margin: 0 auto;
+    color: #52625A;
+    font-size: 15px;
+  }
+
+  /* ============================================
+     FAQ
+  ============================================ */
+  .lista-faq{
+    margin-top: 40px;
+    max-width: 720px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+  }
+  .item-faq{
+    background: var(--branco);
+    border-radius: var(--r-md);
+    box-shadow: var(--sombra);
+    overflow:hidden;
+  }
+  .pergunta-faq{
+    width:100%;
+    background:none;
+    border:none;
+    text-align:left;
+    padding: 18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 14px;
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--verde-escuro);
+  }
+  .pergunta-faq .sinal{
+    flex-shrink:0;
+    width: 26px; height:26px;
+    border-radius:50%;
+    background: var(--creme-escuro);
+    display:flex; align-items:center; justify-content:center;
+    transition: transform .25s ease;
+  }
+  .item-faq.aberto .sinal{ transform: rotate(45deg); background: var(--verde); color:var(--branco); }
+  .resposta-faq{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height .3s ease;
+  }
+  .resposta-faq p{
+    padding: 0 20px 20px;
+    font-size: 14.5px;
+    color: #5B6C63;
+  }
+
+  /* ============================================
+     CTA FINAL
+  ============================================ */
+  .secao-cta-final{
+    background: var(--verde-escuro);
+    text-align:center;
+  }
+  .secao-cta-final h2{
+    color: var(--branco);
+    font-size: clamp(26px, 4.5vw, 38px);
+    font-weight: 700;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .secao-cta-final .centralizar-btn{ margin-top: 30px; }
+
+  /* ============================================
+     FOOTER
+  ============================================ */
+  footer{
+    background: var(--tinta);
+    color: rgba(251,242,233,0.65);
+    padding: 34px 0 90px;
+    text-align:center;
+    font-size: 12.5px;
+    line-height:1.7;
+  }
+  footer strong{ color: rgba(251,242,233,0.9); }
+
+  /* ============================================
+     CTA STICKY MOBILE
+  ============================================ */
+  .cta-fixo{
+    position: fixed;
+    left:0; right:0; bottom:0;
+    z-index: 50;
+    background: var(--branco);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    box-shadow: 0 -8px 24px rgba(28,40,34,0.14);
+    transform: translateY(120%);
+    transition: transform .3s ease;
+  }
+  .cta-fixo.visivel{ transform: translateY(0); }
+  .cta-fixo .btn{ width:100%; }
+
+  /* ============================================
+     RESPONSIVO — TABLET / DESKTOP
+  ============================================ */
+  @media (min-width: 720px){
+    .grid-dores{ grid-template-columns: repeat(2, 1fr); }
+    .grid-vinculo{ grid-template-columns: repeat(2, 1fr); }
+    .grid-precos{ grid-template-columns: repeat(2, 1fr); max-width: 760px; margin-left:auto; margin-right:auto; }
+    .bloco-entrega{ grid-template-columns: 0.85fr 1.15fr; gap: 48px; text-align:left; }
+    .entrega-info{ text-align:left; }
+    .lista-itens{ text-align:left; }
+    .grid-bonus{ grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 980px){
+    section{ padding: 90px 0; }
+    .hero{ padding-top: 70px; padding-bottom: 76px; }
+    .hero-cta{ display:flex; justify-content:center; }
+    .marquee-item{ width: 240px; }
+    .cta-fixo{ display:none; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    html{ scroll-behavior:auto; }
+    .marquee-trilho{ animation: none !important; }
+    .marquee-secao{ overflow-x: auto; -webkit-mask-image:none; mask-image:none; }
+  }
+
+  :focus-visible{
+    outline: 3px solid var(--mostarda);
+    outline-offset: 2px;
+  }
+
+  /* ---------- Entrada suave ao rolar a página ---------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .55s ease, transform .55s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.em-vista{ opacity: 1; transform: translateY(0); }
+
+  /* ============================================
+     AJUSTES MOBILE PEQUENO (abaixo de 640px)
+     Reduz tipografia, padding, botões e o mockup do
+     hero pra manter a proporção certa em telas de celular.
+  ============================================ */
+  @media (max-width: 639px){
+    section{ padding: 44px 0; }
+    .hero{ padding: 36px 0 40px; }
+
+    .eyebrow{ font-size: 12px; padding: 7px 14px; }
+    .hero h1{ font-size: 26px; }
+    .titulo-secao{ font-size: 23px; }
+    .subtitulo-secao{ font-size: 14.5px; }
+    .hero-sub{ font-size: 15.5px; }
+    .secao-perda h2{ font-size: 23px; }
+    .secao-perda p{ font-size: 14.5px; }
+    .secao-cta-final h2{ font-size: 23px; }
+    .entrega-nome{ font-size: 19px; }
+
+    .btn{ padding: 15px 22px; font-size: 15px; }
+    .selo{ font-size: 12.5px; }
+
+    .hero-visual{ margin-top: 2px; }
+    .mockup-produto{ max-width: 250px; padding: 22px 16px 16px; }
+    .mockup-produto .folha-atras{ width: 50%; }
+    .mockup-produto .folha-1{ top: 2px; left: -2px; }
+    .mockup-produto .folha-2{ bottom: 2px; right: -2px; }
+
+    .cartao-preco{ padding: 22px 18px; }
+    .cartao-preco .valor{ font-size: 32px; }
+    .cartao-preco h3{ font-size: 19px; }
+    .imagem-produto img{ max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+
+<!-- ============================================
+     ÍCONES SVG (sprite reutilizável, estilo traço arredondado)
+============================================ -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="ic-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17 19 7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="ic-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-9.3-9C1 7.3 3 4 6.5 4c2 0 3.4 1.1 4.5 2.6C12.1 5.1 13.5 4 15.5 4 19 4 21 7.3 19.3 11c-2.3 4.5-9.3 9-9.3 9z"/></symbol>
+  <symbol id="ic-smile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14c1 1.4 2.3 2 3.5 2s2.5-.6 3.5-2"/><path d="M8.5 9.5h.01M15.5 9.5h.01"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.6-4.4 4 1.2 5.9L12 16.6l-5.3 2.8 1.2-5.9-4.4-4 5.9-.6z"/></symbol>
+  <symbol id="ic-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17.5" cy="9" r="2.3"/><path d="M15.7 14.7c2.5.3 4.3 2.2 4.3 4.8"/></symbol>
+  <symbol id="ic-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14.5V5.5a2 2 0 0 0-4 0v9a3.5 3.5 0 1 0 4 0z"/><circle cx="10" cy="17" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ic-maze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M7 8h6v4H9v4h8"/></symbol>
+  <symbol id="ic-rug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="M3.5 9.5h17M8 9.5V19M16 9.5V19"/></symbol>
+  <symbol id="ic-cards" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.3" y="3.5" width="12" height="16" rx="2.4" transform="rotate(8 12 11.5)"/><rect x="5.5" y="4.5" width="12" height="16" rx="2.4" fill="var(--branco)"/></symbol>
+  <symbol id="ic-doll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5.5" r="2.7"/><path d="M12 8.5v6M8.5 11l3.5-1 3.5 1M9 20l3-5.5 3 5.5"/></symbol>
+  <symbol id="ic-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 10.5c.5-1 1.4-1.5 2-1.5M14 9c.6 0 1.5.5 2 1.5M8.5 15c1.2 1 2.3 1.4 3.5 1.4s2.3-.4 3.5-1.4"/></symbol>
+  <symbol id="ic-check-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17 19 7"/></symbol>
+  <symbol id="ic-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 14h5l-1 7 9-12h-5l1-6z"/></symbol>
+  <symbol id="ic-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8V4h10v4"/><rect x="5" y="8" width="14" height="8" rx="1.5"/><path d="M7 16v4h10v-4"/></symbol>
+  <symbol id="ic-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.2a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v7.6a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="ic-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></symbol>
+  <symbol id="ic-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/><path d="M8.5 20h7M12 16.5V20"/></symbol>
+  <symbol id="ic-mudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.8 5.8l12.4 12.4"/></symbol>
+  <symbol id="ic-coracao-partido" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-9.3-9C1 7.3 3 4 6.5 4c2 0 3.4 1.1 4.5 2.6C12.1 5.1 13.5 4 15.5 4 19 4 21 7.3 19.3 11c-2.3 4.5-9.3 9-9.3 9z"/><path d="M10.3 7.5 12 10l-2 2.3 2 2.7"/></symbol>
+  <symbol id="ic-nuvem-chuva" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15.5a4 4 0 0 1 .6-7.9 5.5 5.5 0 0 1 10.4 1.4A3.5 3.5 0 0 1 17.5 16H7z"/><path d="M9 19l-1 2.5M13 19l-1 2.5M17 19l-1 2.5"/></symbol>
+  <symbol id="ic-chama" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.2 3-2.8 4.3-2.8 7.5a2.8 2.8 0 0 0 5.6 0c0-1-.5-1.7-1-2.4 1.7.6 3.2 2.5 3.2 4.9a5 5 0 0 1-10 0C7 8.5 12 7.5 12 3z"/></symbol>
+</svg>
+
+<!-- ============================================
+     1. BARRA DE URGÊNCIA
+============================================ -->
+<div class="barra-urgencia">
+  Esta página estará disponível até <strong id="cronometro">00:15:00</strong> — depois o acesso fecha
+</div>
+
+<!-- ============================================
+     2. HERO
+============================================ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-texto">
+      <span class="eyebrow">KIT CONSULTÓRIO LÚDICO</span>
+      <h1>A criança que pede pra voltar na terapia — e os pais que passam a <span class="destaque">te indicar</span> depois da primeira sessão</h1>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mockup-produto">
+        <img class="folha-atras folha-1" src="images/atv-psi-1.webp" alt="" aria-hidden="true">
+        <img class="folha-atras folha-2" src="images/atv-psi-5.webp" alt="" aria-hidden="true">
+        <img class="capa-kit" src="images/capa-kit.png" alt="Kit Consultório Lúdico: capa do material com +80 recursos terapêuticos, prontos para imprimir e usar com crianças">
+      </div>
+    </div>
+
+    <div class="hero-texto">
+      <p class="hero-sub">+80 recursos terapêuticos que transformam qualquer sessão travada numa sessão que a criança lembra com carinho — e os pais notam a diferença. Organizados por demanda: ansiedade, TDAH, luto, comportamento. Imprima e aplique.</p>
+
+      <ul class="lista-beneficios">
+        <li><svg width="19" height="19"><use href="#ic-bolt"/></svg>Acesso imediato após a compra</li>
+        <li><svg width="19" height="19"><use href="#ic-printer"/></svg>Imprime e usa na mesma sessão</li>
+        <li><svg width="19" height="19"><use href="#ic-folder"/></svg>Organizado por demanda clínica</li>
+        <li><svg width="19" height="19"><use href="#ic-layers"/></svg>+80 recursos prontos pra usar</li>
+        <li><svg width="19" height="19"><use href="#ic-monitor"/></svg>Funciona online e presencial</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a href="#preco" class="btn btn-primario btn-bloco">
+          Quero meu kit agora
+          <svg width="18" height="18"><use href="#ic-arrow"/></svg>
+        </a>
+      </div>
+
+      <div class="selos">
+        <span class="selo"><svg width="17" height="17"><use href="#ic-shield"/></svg>Garantia de 15 dias</span>
+        <span class="selo"><svg width="17" height="17"><use href="#ic-lock"/></svg>Pagamento seguro</span>
+        <span class="selo"><svg width="17" height="17"><use href="#ic-clock"/></svg>Acesso imediato</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<svg class="divisor" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 0 h1200 v24 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 q-15 -18 -30 0 z" fill="#FBF2E9"/>
+</svg>
+
+<!-- ============================================
+     3. VEJA O KIT POR DENTRO
+============================================ -->
+<section class="secao-creme">
+  <div class="wrap">
+    <h2 class="titulo-secao">Veja o kit por dentro</h2>
+    <p class="subtitulo-secao">Uma prévia dos recursos prontos pra imprimir e levar direto pra sessão</p>
+
+    <!-- Carrossel com scroll automático (loop contínuo). O conjunto de 6 recursos se repete
+         uma vez no HTML para o loop ficar perfeitamente contínuo — ao passar o mouse, pausa.
+         A ficha "Pessoas" foi retirada daqui por destoar visualmente das demais (fundo em
+         padrão xadrez e ilustração em outro estilo); as outras 6 seguem o mesmo padrão flat/colorido. -->
+    <div class="marquee-secao">
+      <div class="marquee-trilho">
+        <article class="marquee-item">
+          <img src="images/atv-psi-1.webp" alt="Ficha Roda das Emoções">
+          <div class="marquee-texto"><h3>Roda das Emoções</h3><p>Nomear o que sente sem precisar explicar com palavras</p></div>
+        </article>
+        <article class="marquee-item">
+          <img src="images/atv-psi-2.webp" alt="Ficha Termômetro da Ansiedade">
+          <div class="marquee-texto"><h3>Termômetro da Ansiedade</h3><p>Mede a intensidade antes que a criança se desregule</p></div>
+        </article>
+        <article class="marquee-item">
+          <img src="images/atv-psi-3.webp" alt="Ficha Labirinto da Calma">
+          <div class="marquee-texto"><h3>Labirinto da Calma</h3><p>Respiração e foco em forma de jogo</p></div>
+        </article>
+        <article class="marquee-item">
+          <img src="images/atv-psi-4.webp" alt="Ficha Pote das Lembranças">
+          <div class="marquee-texto"><h3>Pote das Lembranças</h3><p>Acolhe o luto com um exercício visual e afetivo</p></div>
+        </article>
+        <article class="marquee-item">
+          <img src="images/atv-psi-5.webp" alt="Ficha Baralho de Sentimentos">
+          <div class="marquee-texto"><h3>Baralho de Sentimentos</h3><p>Nomeia e conversa sobre 8 sentimentos diferentes</p></div>
+        </article>
+        <article class="marquee-item">
+          <img src="images/foto-3.webp" alt="Ficha Como Eu Posso Me Regular">
+          <div class="marquee-texto"><h3>Como Eu Posso Me Regular</h3><p>Sinaliza o nível de regulação com cores, como um semáforo</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/atv-psi-1.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Roda das Emoções</h3><p>Nomear o que sente sem precisar explicar com palavras</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/atv-psi-2.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Termômetro da Ansiedade</h3><p>Mede a intensidade antes que a criança se desregule</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/atv-psi-3.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Labirinto da Calma</h3><p>Respiração e foco em forma de jogo</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/atv-psi-4.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Pote das Lembranças</h3><p>Acolhe o luto com um exercício visual e afetivo</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/atv-psi-5.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Baralho de Sentimentos</h3><p>Nomeia e conversa sobre 8 sentimentos diferentes</p></div>
+        </article>
+        <article class="marquee-item" aria-hidden="true">
+          <img src="images/foto-3.webp" alt="" loading="lazy">
+          <div class="marquee-texto"><h3>Como Eu Posso Me Regular</h3><p>Sinaliza o nível de regulação com cores, como um semáforo</p></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="centralizar-btn">
+      <a href="#preco" class="btn btn-primario">Quero o kit completo <svg width="18" height="18"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     4. DOR ESPECÍFICA
+============================================ -->
+<section class="secao-creme-escuro">
+  <div class="wrap">
+    <h2 class="titulo-secao">Se a sessão trava e você não sabe pra onde ir, <span class="destaque">esse kit é pra você</span></h2>
+    <p class="subtitulo-secao">Cada recurso foi pensado pra uma situação real. Alguma dessas já bateu na sua porta essa semana?</p>
+
+    <div class="grid-dores">
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-mudo"/></svg>
+        <p>A criança que não fala nada e olha pro chão a sessão inteira</p>
+      </div>
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-coracao-partido"/></svg>
+        <p>A criança que chora e quer voltar pro colo da mãe ou do pai</p>
+      </div>
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-people"/></svg>
+        <p>O filho no meio da separação dos pais, sem saber de que lado ficar</p>
+      </div>
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-bolt"/></svg>
+        <p>O paciente com TDAH que não consegue ficar parado nem 2 minutos</p>
+      </div>
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-nuvem-chuva"/></svg>
+        <p>A criança que perdeu alguém e não tem palavra pra nomear o que sente</p>
+      </div>
+      <div class="cartao-dor">
+        <svg class="icone-dor" width="26" height="26"><use href="#ic-chama"/></svg>
+        <p>A criança que se desregula rápido e reage com intensidade</p>
+      </div>
+    </div>
+
+    <div class="centralizar-btn">
+      <a href="#preco" class="btn btn-primario">Quero meu kit agora <svg width="18" height="18"><use href="#ic-arrow"/></svg></a>
+    </div>
+    <p class="texto-reforco">Essas são só algumas das situações. O kit cobre as demandas mais comuns do consultório infantil — do primeiro contato ao dia a dia de sessão.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     5. O QUE MUDA COM O VÍNCULO CERTO
+============================================ -->
+<section class="secao-creme">
+  <div class="wrap">
+    <h2 class="titulo-secao">O que muda quando você tem o vínculo certo</h2>
+    <p class="subtitulo-secao">O recurso certo na hora certa não entretém — ele constrói a relação que sustenta o tratamento</p>
+
+    <div class="grid-vinculo">
+      <div class="cartao-vinculo">
+        <span class="icone-vinculo"><svg width="24" height="24" style="color:#fff"><use href="#ic-heart"/></svg></span>
+        <h3>A criança pede pra voltar</h3>
+        <p>Sessão deixa de ser obrigação e vira um lugar que ela quer estar de novo.</p>
+      </div>
+      <div class="cartao-vinculo">
+        <span class="icone-vinculo"><svg width="24" height="24" style="color:#fff"><use href="#ic-people"/></svg></span>
+        <h3>Os pais percebem a diferença já na primeira sessão</h3>
+        <p>Chegam em casa com o filho falando do que fez — e isso constrói confiança no seu trabalho antes mesmo do resultado clínico aparecer.</p>
+      </div>
+      <div class="cartao-vinculo">
+        <span class="icone-vinculo"><svg width="24" height="24" style="color:#fff"><use href="#ic-shield"/></svg></span>
+        <h3>Mais confiança e menos tentativa e erro no consultório</h3>
+        <p>Você sabe exatamente qual recurso puxar pra cada demanda, sem improvisar sob pressão.</p>
+      </div>
+      <div class="cartao-vinculo">
+        <span class="icone-vinculo"><svg width="24" height="24" style="color:#fff"><use href="#ic-star"/></svg></span>
+        <h3>Você vira a psicóloga que as famílias indicam pra outras famílias</h3>
+        <p>Indicação nasce de experiência, não de anúncio. E vínculo forte é o que fica na lembrança dos pais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     6. SEÇÃO DE PERDA
+============================================ -->
+<section class="secao-perda">
+  <div class="wrap">
+    <h2>Cada sessão sem vínculo é uma indicação que você perde</h2>
+    <p>Não é só a criança que não quer voltar. É a mãe que não comenta com a amiga, é o pai que não menciona no grupo da escola, é o próximo paciente que nunca chega até você — porque a sessão anterior não deixou marca. O recurso certo custa uma decisão. A indicação perdida custa meses de agenda vazia.</p>
+    <div class="centralizar-btn">
+      <a href="#preco" class="btn btn-branco">Quero mudar isso agora <svg width="18" height="18"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     7. TUDO QUE VOCÊ VAI RECEBER
+============================================ -->
+<section class="secao-creme-escuro" id="conteudo">
+  <div class="wrap">
+    <h2 class="titulo-secao">Tudo que você <span class="destaque">vai receber</span></h2>
+
+    <div class="bloco-entrega">
+      <div class="entrega-produto">
+        <img src="images/hero-mockup.webp" alt="Kit Consultório Lúdico: mockup com +80 recursos terapêuticos impressos e os 5 bônus exclusivos">
+      </div>
+      <div class="entrega-info">
+        <h3 class="entrega-nome">Kit Consultório Lúdico</h3>
+        <p class="entrega-tag">+80 recursos terapêuticos</p>
+        <ul class="lista-itens">
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>+80 fichas e atividades organizadas por demanda clínica</li>
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>Recursos para ansiedade, TDAH, luto e comportamento</li>
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>Jogos e dinâmicas prontos pra imprimir, sem edição</li>
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>Materiais adaptáveis pra atendimento online</li>
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>Formato PDF de alta resolução, pronto pra qualquer impressora</li>
+          <li><span class="check-icone" style="background:var(--verde)"><svg width="12" height="12"><use href="#ic-check"/></svg></span>Acesso vitalício ao material e às atualizações</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="texto-ponte">E não para por aí — no kit completo você ainda leva 5 bônus que resolvem as maiores dores do dia a dia clínico.</p>
+    <span class="badge-bonus">5 BÔNUS EXCLUSIVOS</span>
+
+    <div class="grid-bonus">
+      <div class="cartao-bonus">
+        <span class="bonus-numero">01</span>
+        <div class="bonus-texto">
+          <strong>Fichas de anamnese infantil estruturadas</strong>
+          <p>Modelos prontos pra usar já na primeira sessão com os pais.</p>
+          <span class="bonus-preco"><span class="riscado">R$ 27</span><span class="gratis">GRÁTIS</span></span>
+        </div>
+      </div>
+      <div class="cartao-bonus">
+        <span class="bonus-numero">02</span>
+        <div class="bonus-texto">
+          <strong>Roteiro de devolutiva para os pais</strong>
+          <p>Um roteiro pronto pra você não travar na hora de dar retorno.</p>
+          <span class="bonus-preco"><span class="riscado">R$ 19</span><span class="gratis">GRÁTIS</span></span>
+        </div>
+      </div>
+      <div class="cartao-bonus">
+        <span class="bonus-numero">03</span>
+        <div class="bonus-texto">
+          <strong>Checklist de planejamento de sessão</strong>
+          <p>Organize cada sessão antes de começar, sem improviso.</p>
+          <span class="bonus-preco"><span class="riscado">R$ 15</span><span class="gratis">GRÁTIS</span></span>
+        </div>
+      </div>
+      <div class="cartao-bonus">
+        <span class="bonus-numero">04</span>
+        <div class="bonus-texto">
+          <strong>Guia de manejo comportamental</strong>
+          <p>Estratégias práticas pra lidar com comportamentos difíceis em sessão.</p>
+          <span class="bonus-preco"><span class="riscado">R$ 32</span><span class="gratis">GRÁTIS</span></span>
+        </div>
+      </div>
+      <div class="cartao-bonus">
+        <span class="bonus-numero">05</span>
+        <div class="bonus-texto">
+          <strong>Kit de psicoeducação visual para os pais</strong>
+          <p>Material ilustrado pra explicar o processo terapêutico aos pais.</p>
+          <span class="bonus-preco"><span class="riscado">R$ 24</span><span class="gratis">GRÁTIS</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="centralizar-btn">
+      <a href="#preco" class="btn btn-primario">Quero o kit completo <svg width="18" height="18"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     8. PROVA SOCIAL
+============================================ -->
+<section class="secao-creme">
+  <div class="wrap">
+    <h2 class="titulo-secao">Psicólogas que já usam o kit — e já sentem a diferença com os pais</h2>
+    <p class="subtitulo-secao">Relatos de quem aplicou o material em sessão</p>
+
+    <!-- Prints reais de conversas de pacientes/famílias, enviados pela cliente. -->
+    <div class="carrossel">
+      <div class="carrossel-viewport">
+        <div class="carrossel-trilho" id="trilho-depoimentos">
+          <div class="slide-depoimento">
+            <div class="moldura-celular">
+              <div class="chat-cartao">
+                <img src="images/depoimento-2.webp" alt="Print de conversa: mãe agradecendo pelas atividades, contando que a irmã está evoluindo muito nas falas">
+              </div>
+            </div>
+          </div>
+          <div class="slide-depoimento">
+            <div class="moldura-celular">
+              <div class="chat-cartao">
+                <img src="images/depoimento-1.webp" alt="Print de conversa com foto de um menino fazendo uma atividade do kit, psicóloga agradecendo e comentando que está ajudando muito os pacientes">
+              </div>
+            </div>
+          </div>
+          <div class="slide-depoimento">
+            <div class="moldura-celular">
+              <div class="chat-cartao">
+                <img src="images/depoimento-3.webp" alt="Print de conversa com foto de uma menina fazendo uma atividade do kit, familiar contando que ela está viciada nos materiais">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carrossel-nav">
+        <button class="seta-carrossel" id="seta-anterior" aria-label="Depoimento anterior"><svg width="20" height="20" style="transform:scaleX(-1)"><use href="#ic-arrow"/></svg></button>
+        <button class="seta-carrossel" id="seta-proxima" aria-label="Próximo depoimento"><svg width="20" height="20"><use href="#ic-arrow"/></svg></button>
+      </div>
+      <div class="carrossel-dots" id="dots-depoimentos">
+        <button class="ativo" aria-label="Ir para depoimento 1"></button>
+        <button aria-label="Ir para depoimento 2"></button>
+        <button aria-label="Ir para depoimento 3"></button>
+      </div>
+      <a href="#preco" class="link-oferta">Ver oferta <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     9. PREÇO
+============================================ -->
+<section class="secao-preco" id="preco">
+  <div class="wrap">
+    <span class="badge-oferta">OFERTA VÁLIDA POR TEMPO LIMITADO</span>
+    <h2 class="titulo-secao">Escolha seu kit</h2>
+    <p class="subtitulo-secao">Acesso imediato após a confirmação do pagamento</p>
+
+    <div class="grid-precos">
+      <div class="cartao-preco">
+        <h3>Kit Básico</h3>
+        <div class="valor">R$ 19,90</div>
+        <ul class="lista-precos">
+          <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>30 fichas e atividades essenciais</li>
+          <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>Recursos para ansiedade e comportamento</li>
+          <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>Acesso imediato em PDF</li>
+        </ul>
+        <a href="https://pay.wiapy.com/ma6vmDYA9Y9W" target="_blank" rel="noopener" class="btn btn-contorno btn-bloco">Quero o kit básico</a>
+      </div>
+
+      <div class="cartao-preco destaque">
+        <span class="tag-melhor">MELHOR ESCOLHA</span>
+        <h3>Kit Completo</h3>
+        <span class="preco-original">R$ 89,90</span>
+        <div class="valor">R$ 37,90</div>
+        <span class="preco-parcela">ou em até 3x de R$ 12,63 no cartão</span>
+        <div class="imagem-produto">
+          <img src="images/capa-kit.png" alt="Capa do Kit Consultório Lúdico">
+        </div>
+        <ul class="lista-precos">
+          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>+80 fichas, jogos e atividades completas</li>
+          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Todas as demandas: ansiedade, TDAH, luto, comportamento</li>
+          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Os 5 bônus exclusivos inclusos</li>
+          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Acesso vitalício + atualizações futuras</li>
+          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Garantia de 15 dias</li>
+        </ul>
+        <a href="https://pay.wiapy.com/_d6UG-wqonnq" target="_blank" rel="noopener" class="btn btn-mostarda btn-bloco">Quero o kit completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     10. GARANTIA
+============================================ -->
+<section class="secao-creme secao-garantia">
+  <div class="wrap">
+    <div class="selo-garantia">
+      <strong>15</strong>
+      <span>DIAS DE GARANTIA</span>
+    </div>
+    <h2 class="titulo-secao" style="font-size:24px;">Testou e não era o que esperava?</h2>
+    <p>Você tem 15 dias pra usar o material com calma. Se não fizer sentido pra sua prática, devolvemos 100% do valor — sem formulário longo, sem perguntas.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     11. FAQ
+============================================ -->
+<section class="secao-creme-escuro">
+  <div class="wrap">
+    <h2 class="titulo-secao">Perguntas frequentes</h2>
+
+    <div class="lista-faq" id="lista-faq">
+      <div class="item-faq">
+        <button class="pergunta-faq">Como acesso o material depois da compra?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Assim que o pagamento é confirmado, você recebe um e-mail com o link de acesso a todos os arquivos. O acesso é imediato, 24 horas por dia.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Em qual formato vem o kit?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Todos os recursos vêm em PDF de alta resolução, prontos pra imprimir em casa, gráfica ou usar direto na tela em atendimento online.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Posso imprimir quantas vezes quiser?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Sim. O acesso é vitalício e você pode imprimir os materiais quantas vezes precisar, para todos os seus pacientes.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Preciso ter experiência com psicologia infantil pra usar?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Não. Os recursos vêm organizados por demanda e são intuitivos de aplicar, mesmo pra quem está começando a atender crianças.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Funciona para atendimento online também?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Sim. Boa parte do material pode ser compartilhado em tela ou enviado pra família imprimir em casa antes da sessão.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Serve para atendimento em grupo?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Sim, vários recursos — como o baralho de perguntas e o tapete de sentimentos — funcionam bem em grupos terapêuticos e oficinas.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">Como funciona a garantia?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Você tem 15 dias corridos após a compra para pedir reembolso integral, sem precisar justificar o motivo.</p></div>
+      </div>
+      <div class="item-faq">
+        <button class="pergunta-faq">O pagamento é seguro?<span class="sinal"><svg width="14" height="14"><use href="#ic-arrow"/></svg></span></button>
+        <div class="resposta-faq"><p>Sim, o pagamento é processado por uma plataforma criptografada, com os mesmos padrões de segurança usados por bancos e grandes varejistas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     12. CTA FINAL
+============================================ -->
+<section class="secao-cta-final">
+  <div class="wrap">
+    <h2>A próxima criança pode sair da sua sala pedindo pra voltar</h2>
+    <div class="centralizar-btn">
+      <a href="#preco" class="btn btn-branco">Quero meu kit agora <svg width="18" height="18"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     13. FOOTER
+============================================ -->
+<footer>
+  <div class="wrap">
+    <p><strong>Kit Consultório Lúdico</strong> — Recursos terapêuticos digitais para psicólogas infantis</p>
+    <p>© 2026 Kit Consultório Lúdico. Todos os direitos reservados.</p>
+    <p>Este é um produto digital de apoio à prática clínica e não substitui a formação, supervisão ou julgamento profissional do psicólogo responsável pelo atendimento.</p>
+  </div>
+</footer>
+
+<!-- CTA fixo (mobile) -->
+<div class="cta-fixo" id="cta-fixo">
+  <a href="#preco" class="btn btn-primario">Quero meu kit agora <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Cronômetro de urgência ---------- */
+  var DURACAO = 15 * 60; // 15 minutos
+  var restante = DURACAO;
+  var elCronometro = document.getElementById('cronometro');
+
+  function formatar(segundos){
+    var h = Math.floor(segundos / 3600);
+    var m = Math.floor((segundos % 3600) / 60);
+    var s = segundos % 60;
+    function dois(n){ return n < 10 ? '0' + n : '' + n; }
+    return dois(h) + ':' + dois(m) + ':' + dois(s);
+  }
+
+  setInterval(function(){
+    restante--;
+    if (restante < 0){ restante = DURACAO; }
+    elCronometro.textContent = formatar(restante);
+  }, 1000);
+
+  /* ---------- FAQ acordeão ---------- */
+  var itensFaq = document.querySelectorAll('.item-faq');
+  itensFaq.forEach(function(item){
+    var pergunta = item.querySelector('.pergunta-faq');
+    var resposta = item.querySelector('.resposta-faq');
+    pergunta.addEventListener('click', function(){
+      var jaAberto = item.classList.contains('aberto');
+      itensFaq.forEach(function(outro){
+        outro.classList.remove('aberto');
+        outro.querySelector('.resposta-faq').style.maxHeight = null;
+      });
+      if (!jaAberto){
+        item.classList.add('aberto');
+        resposta.style.maxHeight = resposta.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- Carrossel de depoimentos ---------- */
+  var trilho = document.getElementById('trilho-depoimentos');
+  var slides = trilho.children.length;
+  var indiceAtual = 0;
+  var dots = document.querySelectorAll('#dots-depoimentos button');
+
+  function irPara(indice){
+    indiceAtual = (indice + slides) % slides;
+    trilho.style.transform = 'translateX(-' + (indiceAtual * 100) + '%)';
+    dots.forEach(function(dot, i){ dot.classList.toggle('ativo', i === indiceAtual); });
+  }
+
+  document.getElementById('seta-anterior').addEventListener('click', function(){ irPara(indiceAtual - 1); });
+  document.getElementById('seta-proxima').addEventListener('click', function(){ irPara(indiceAtual + 1); });
+  dots.forEach(function(dot, i){ dot.addEventListener('click', function(){ irPara(i); }); });
+
+  /* ---------- Entrada suave ao rolar (escalonada por grupo) ---------- */
+  var grupoStagger = document.querySelectorAll('.grid-dores, .grid-vinculo, .grid-bonus, .grid-precos, .lista-faq, .lista-itens');
+  grupoStagger.forEach(function(grupo){
+    Array.prototype.forEach.call(grupo.children, function(filho, indice){
+      filho.classList.add('reveal');
+      filho.style.transitionDelay = Math.min(indice * 70, 350) + 'ms';
+    });
+  });
+
+  var itensSolo = document.querySelectorAll('.titulo-secao, .subtitulo-secao, .selo-garantia, .secao-garantia p, .secao-perda h2, .secao-perda p, .secao-cta-final h2, .entrega-produto, .entrega-nome, .entrega-tag, .texto-ponte, .badge-bonus, .texto-reforco');
+  itensSolo.forEach(function(el){ el.classList.add('reveal'); });
+
+  var observadorReveal = new IntersectionObserver(function(entradas){
+    entradas.forEach(function(entrada){
+      if (entrada.isIntersecting){
+        entrada.target.classList.add('em-vista');
+        observadorReveal.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el){ observadorReveal.observe(el); });
+
+  /* ---------- CTA fixo no mobile após rolar a dobra ---------- */
+  var ctaFixo = document.getElementById('cta-fixo');
+  var hero = document.querySelector('.hero');
+  var observador = new IntersectionObserver(function(entradas){
+    entradas.forEach(function(entrada){
+      if (entrada.isIntersecting){
+        ctaFixo.classList.remove('visivel');
+      } else {
+        ctaFixo.classList.add('visivel');
+      }
+    });
+  }, { threshold: 0 });
+  observador.observe(hero);
+})();
+</script>
+
+</body>
+</html>
