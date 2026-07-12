@@ -213,9 +213,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     padding: 11px 14px;
     font-size: 13.5px;
     font-weight: 600;
-    position: sticky;
-    top:0;
-    z-index: 60;
   }
   .barra-urgencia strong{ font-family: var(--fonte-titulo); letter-spacing:0.03em; }
   #cronometro{ font-variant-numeric: tabular-nums; }
@@ -991,22 +988,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
   footer strong{ color: rgba(251,242,233,0.9); }
 
   /* ============================================
-     CTA STICKY MOBILE
-  ============================================ */
-  .cta-fixo{
-    position: fixed;
-    left:0; right:0; bottom:0;
-    z-index: 50;
-    background: var(--branco);
-    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-    box-shadow: 0 -8px 24px rgba(28,40,34,0.14);
-    transform: translateY(120%);
-    transition: transform .3s ease;
-  }
-  .cta-fixo.visivel{ transform: translateY(0); }
-  .cta-fixo .btn{ width:100%; }
-
-  /* ============================================
      RESPONSIVO — TABLET / DESKTOP
   ============================================ */
   @media (min-width: 720px){
@@ -1024,7 +1005,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     .hero{ padding-top: 70px; padding-bottom: 76px; }
     .hero-cta{ display:flex; justify-content:center; }
     .marquee-item{ width: 240px; }
-    .cta-fixo{ display:none; }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -1583,11 +1563,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
   </div>
 </footer>
 
-<!-- CTA fixo (mobile) -->
-<div class="cta-fixo" id="cta-fixo">
-  <a href="#preco" class="btn btn-primario">Quero meu kit agora <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
-</div>
-
 <script>
 (function(){
   "use strict";
@@ -1687,20 +1662,6 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(function(el){ observadorReveal.observe(el); });
-
-  /* ---------- CTA fixo no mobile após rolar a dobra ---------- */
-  var ctaFixo = document.getElementById('cta-fixo');
-  var hero = document.querySelector('.hero');
-  var observador = new IntersectionObserver(function(entradas){
-    entradas.forEach(function(entrada){
-      if (entrada.isIntersecting){
-        ctaFixo.classList.remove('visivel');
-      } else {
-        ctaFixo.classList.add('visivel');
-      }
-    });
-  }, { threshold: 0 });
-  observador.observe(hero);
 })();
 </script>
 
