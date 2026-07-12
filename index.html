@@ -708,11 +708,37 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     border: 2.5px solid var(--branco);
     position:relative;
     overflow:hidden;
+    text-align:center;
   }
   .cartao-preco h3{ font-size: 21px; }
+  .rotulo-kit{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #7C8C83;
+  }
+  .badge-recursos{
+    display:inline-block;
+    margin-top: 10px;
+    background: var(--mostarda);
+    color: var(--verde-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    padding: 5px 14px;
+    border-radius: var(--r-pill);
+  }
+  .tagline-kit{
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #46564D;
+  }
   .preco-original{
     display:block;
-    margin-top: 14px;
+    margin-top: 16px;
     font-size: 15px;
     font-weight: 600;
     text-decoration: line-through;
@@ -732,21 +758,30 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     font-weight: 600;
     color: #7C8C83;
   }
+  .economia{
+    display:block;
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--verde);
+  }
   .imagem-produto{
-    margin: 20px 0 4px;
+    margin: 16px 0 4px;
     display:flex;
     justify-content:center;
   }
   .imagem-produto img{
-    max-width: 190px;
+    max-width: 170px;
     width: 100%;
     filter: drop-shadow(0 10px 18px rgba(0,0,0,0.28));
   }
+  .btn-preco{ margin-top: 22px; }
   .cartao-preco .lista-precos{
-    margin: 22px 0 26px;
+    margin: 22px 0 0;
     display:flex;
     flex-direction:column;
     gap: 10px;
+    text-align:left;
   }
   .cartao-preco .lista-precos li{
     display:flex;
@@ -755,6 +790,44 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     font-weight: 600;
     color: #46564D;
   }
+  .nudge-completo{
+    margin-top: 22px;
+    background: rgba(28,110,98,0.08);
+    border: 1.5px solid rgba(28,110,98,0.22);
+    border-radius: var(--r-md);
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--verde-escuro);
+  }
+  .lista-bonus-preco{
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1.5px dashed rgba(251,242,233,0.28);
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+    text-align:left;
+  }
+  .lista-bonus-preco li{
+    display:flex;
+    align-items:flex-start;
+    gap: 10px;
+  }
+  .lista-bonus-preco svg{ flex-shrink:0; margin-top: 2px; color: var(--mostarda); }
+  .lista-bonus-preco strong{
+    display:block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--branco);
+  }
+  .lista-bonus-preco .riscado-bonus{
+    display:block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: rgba(251,242,233,0.6);
+  }
+  .lista-bonus-preco .riscado-bonus s{ text-decoration: line-through; }
   .cartao-preco.destaque{
     background:
       radial-gradient(circle at 18px 18px, rgba(255,255,255,0.05) 2px, transparent 2px) 0 0/22px 22px,
@@ -764,9 +837,12 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
     transform: translateY(0) scale(1.02);
   }
   .cartao-preco.destaque h3{ color: var(--branco); }
+  .cartao-preco.destaque .rotulo-kit{ color: rgba(251,242,233,0.7); }
+  .cartao-preco.destaque .tagline-kit{ color: rgba(251,242,233,0.85); }
   .cartao-preco.destaque .valor{ color: var(--branco); }
   .cartao-preco.destaque .preco-original{ color: rgba(251,242,233,0.55); }
   .cartao-preco.destaque .preco-parcela{ color: rgba(251,242,233,0.75); }
+  .cartao-preco.destaque .economia{ color: var(--mostarda); }
   .cartao-preco.destaque .lista-precos li{ color: rgba(251,242,233,0.88); }
   .tag-melhor{
     position:absolute;
@@ -998,8 +1074,8 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
 
     .cartao-preco{ padding: 22px 18px; }
     .cartao-preco .valor{ font-size: 32px; }
-    .cartao-preco h3{ font-size: 19px; }
-    .imagem-produto img{ max-width: 150px; }
+    .imagem-produto img{ max-width: 140px; }
+    .tagline-kit{ font-size: 13.5px; }
   }
 </style>
 </head>
@@ -1035,6 +1111,7 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
   <symbol id="ic-coracao-partido" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-9.3-9C1 7.3 3 4 6.5 4c2 0 3.4 1.1 4.5 2.6C12.1 5.1 13.5 4 15.5 4 19 4 21 7.3 19.3 11c-2.3 4.5-9.3 9-9.3 9z"/><path d="M10.3 7.5 12 10l-2 2.3 2 2.7"/></symbol>
   <symbol id="ic-nuvem-chuva" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15.5a4 4 0 0 1 .6-7.9 5.5 5.5 0 0 1 10.4 1.4A3.5 3.5 0 0 1 17.5 16H7z"/><path d="M9 19l-1 2.5M13 19l-1 2.5M17 19l-1 2.5"/></symbol>
   <symbol id="ic-chama" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.2 3-2.8 4.3-2.8 7.5a2.8 2.8 0 0 0 5.6 0c0-1-.5-1.7-1-2.4 1.7.6 3.2 2.5 3.2 4.9a5 5 0 0 1-10 0C7 8.5 12 7.5 12 3z"/></symbol>
+  <symbol id="ic-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9.5" width="16" height="10" rx="1.5"/><path d="M4 9.5h16M12 9.5V20"/><path d="M12 9.5c-1-3.5-5.5-4-5.5-1.3 0 1.3 1.8 1.3 5.5 1.3zM12 9.5c1-3.5 5.5-4 5.5-1.3 0 1.3-1.8 1.3-5.5 1.3z"/></symbol>
 </svg>
 
 <!-- ============================================
@@ -1282,8 +1359,8 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
       <div class="cartao-bonus">
         <span class="bonus-numero">04</span>
         <div class="bonus-texto">
-          <strong>Guia de manejo comportamental</strong>
-          <p>Estratégias práticas pra lidar com comportamentos difíceis em sessão.</p>
+          <strong>Guia de Manejo com Pais Difíceis</strong>
+          <p>Estratégias práticas pra lidar com pais resistentes, cobradores ou ausentes.</p>
           <span class="bonus-preco"><span class="riscado">R$ 32</span><span class="gratis">GRÁTIS</span></span>
         </div>
       </div>
@@ -1363,33 +1440,63 @@ src="https://www.facebook.com/tr?id=865072146358418&ev=PageView&noscript=1"
 
     <div class="grid-precos">
       <div class="cartao-preco">
-        <h3>Kit Básico</h3>
+        <h3 class="rotulo-kit">Kit Básico</h3>
+        <div class="imagem-produto">
+          <img src="images/capa-kit.png" alt="Capa do Kit Consultório Lúdico">
+        </div>
+        <span class="preco-original">De R$ 39,90</span>
         <div class="valor">R$ 19,90</div>
+        <span class="preco-parcela">Pagamento único</span>
+        <a href="https://pay.wiapy.com/ma6vmDYA9Y9W" target="_blank" rel="noopener" class="btn btn-contorno btn-bloco btn-preco">Quero o kit básico</a>
         <ul class="lista-precos">
           <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>30 fichas e atividades essenciais</li>
           <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>Recursos para ansiedade e comportamento</li>
           <li><svg width="16" height="16" style="color:var(--verde); flex-shrink:0"><use href="#ic-check-outline"/></svg>Acesso imediato em PDF</li>
         </ul>
-        <a href="https://pay.wiapy.com/ma6vmDYA9Y9W" target="_blank" rel="noopener" class="btn btn-contorno btn-bloco">Quero o kit básico</a>
+        <p class="nudge-completo">A maioria escolhe o Kit Completo — +80 recursos e os 5 bônus exclusivos inclusos</p>
       </div>
 
       <div class="cartao-preco destaque">
         <span class="tag-melhor">MELHOR ESCOLHA</span>
-        <h3>Kit Completo</h3>
-        <span class="preco-original">R$ 89,90</span>
-        <div class="valor">R$ 37,90</div>
-        <span class="preco-parcela">ou em até 3x de R$ 12,63 no cartão</span>
+        <h3 class="rotulo-kit">Kit Completo</h3>
+        <span class="badge-recursos">+80 RECURSOS INCLUSOS</span>
         <div class="imagem-produto">
           <img src="images/capa-kit.png" alt="Capa do Kit Consultório Lúdico">
         </div>
+        <p class="tagline-kit">O kit completo pra virar a psicóloga que os pais indicam</p>
+        <span class="preco-original">De R$ 89,90</span>
+        <div class="valor">R$ 37,90</div>
+        <span class="preco-parcela">ou em até 3x de R$ 12,63 no cartão</span>
+        <span class="economia">Você economiza R$ 52,00</span>
+        <a href="https://pay.wiapy.com/_d6UG-wqonnq" target="_blank" rel="noopener" class="btn btn-mostarda btn-bloco btn-preco">Quero o kit completo</a>
         <ul class="lista-precos">
           <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>+80 fichas, jogos e atividades completas</li>
           <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Todas as demandas: ansiedade, TDAH, luto, comportamento</li>
-          <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Os 5 bônus exclusivos inclusos</li>
           <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Acesso vitalício + atualizações futuras</li>
           <li><svg width="16" height="16" style="color:#F4A93B; flex-shrink:0"><use href="#ic-check-outline"/></svg>Garantia de 15 dias</li>
         </ul>
-        <a href="https://pay.wiapy.com/_d6UG-wqonnq" target="_blank" rel="noopener" class="btn btn-mostarda btn-bloco">Quero o kit completo</a>
+        <ul class="lista-bonus-preco">
+          <li>
+            <svg width="18" height="18"><use href="#ic-presente"/></svg>
+            <span><strong>Fichas de Anamnese Infantil Estruturadas</strong><span class="riscado-bonus"><s>R$ 27,00</s> — grátis</span></span>
+          </li>
+          <li>
+            <svg width="18" height="18"><use href="#ic-presente"/></svg>
+            <span><strong>Roteiro de Devolutiva para os Pais</strong><span class="riscado-bonus"><s>R$ 19,00</s> — grátis</span></span>
+          </li>
+          <li>
+            <svg width="18" height="18"><use href="#ic-presente"/></svg>
+            <span><strong>Checklist de Planejamento de Sessão</strong><span class="riscado-bonus"><s>R$ 15,00</s> — grátis</span></span>
+          </li>
+          <li>
+            <svg width="18" height="18"><use href="#ic-presente"/></svg>
+            <span><strong>Guia de Manejo com Pais Difíceis</strong><span class="riscado-bonus"><s>R$ 32,00</s> — grátis</span></span>
+          </li>
+          <li>
+            <svg width="18" height="18"><use href="#ic-presente"/></svg>
+            <span><strong>Kit de Psicoeducação Visual para os Pais</strong><span class="riscado-bonus"><s>R$ 24,00</s> — grátis</span></span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
