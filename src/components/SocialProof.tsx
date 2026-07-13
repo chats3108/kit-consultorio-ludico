@@ -33,15 +33,15 @@ const SocialProof = () => {
             </button>
 
             {/* Phone frame */}
-            <div className="relative w-[240px] sm:w-[280px] h-[500px] sm:h-[580px] bg-neutral-900 rounded-[2.5rem] p-2.5 shadow-xl border-4 border-neutral-800">
+            <div className="relative w-[260px] sm:w-[300px] bg-neutral-900 rounded-[2.5rem] p-2.5 shadow-xl border-4 border-neutral-800">
               <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-5 bg-neutral-900 rounded-full z-10" />
-              <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-white">
+              <div className="relative w-full rounded-[2rem] overflow-hidden bg-white aspect-[9/19]">
                 {deps.map((src, i) => (
                   <img
                     key={i}
                     src={src}
                     alt={`Depoimento ${i + 1}`}
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                    className={`absolute inset-0 w-full h-full object-contain bg-white transition-opacity duration-500 ${
                       i === index ? "opacity-100" : "opacity-0"
                     }`}
                   />
