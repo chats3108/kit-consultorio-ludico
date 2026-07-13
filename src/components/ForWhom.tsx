@@ -1,37 +1,36 @@
 const items = [
-  { n: "01", title: "Você é psicóloga(o) infantil", text: "e sente que precisa de recursos mais criativos e envolventes para suas sessões." },
-  { n: "02", title: "Está começando na área", text: "e quer materiais prontos e profissionais para atender com mais segurança." },
-  { n: "03", title: "Já atende há anos", text: "e quer renovar seu repertório com atividades novas e testadas." },
-  { n: "04", title: "Trabalha online ou presencial", text: "e precisa de recursos versáteis que funcionem em qualquer modalidade." }
+  { n: "01", title: "Psicóloga(o) infantil", text: "Precisa de recursos criativos e envolventes pras suas sessões." },
+  { n: "02", title: "Começando na área", text: "Quer materiais prontos e profissionais pra atender com segurança." },
+  { n: "03", title: "Atende há anos", text: "Quer renovar o repertório com atividades novas e testadas." },
+  { n: "04", title: "Online ou presencial", text: "Precisa de recursos versáteis pra qualquer modalidade." }
 ];
 
 const ForWhom = () => {
   return (
-    <section className="py-20 md:py-32 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[11px] uppercase tracking-[0.2em] text-accent font-semibold">
-            Para quem é
-          </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-primary mt-4 text-balance">
-            Se o seu tempo é curto e você sabe que o
-            <em className="italic"> kit é pra você</em>
+    <section className="py-14 md:py-24 bg-background">
+      <div className="container mx-auto px-5">
+        <div className="max-w-3xl mx-auto mb-10 md:mb-14">
+          <span className="tape">Pra quem é</span>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl text-primary mt-4 font-extrabold leading-tight">
+            Se seu tempo é curto, o kit <span className="marker">é pra você</span>.
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {items.map((item, i) => (
             <div
               key={i}
-              className="group relative p-8 md:p-10 bg-card rounded-2xl card-premium border border-border/50"
+              className={`relative p-5 md:p-6 bg-card rounded-2xl border border-foreground/10 ${
+                i % 2 === 0 ? "sm:mt-0 sm:mb-6" : "sm:mt-6"
+              }`}
             >
-              <div className="flex items-start gap-5">
-                <span className="text-4xl font-bold italic text-accent/80 leading-none">
+              <div className="flex items-start gap-4">
+                <span className="text-3xl font-black text-accent leading-none shrink-0">
                   {item.n}
                 </span>
-                <div className="flex-1">
-                  <h3 className="font-bold text-2xl text-primary mb-2 leading-tight">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{item.text}</p>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-base md:text-lg text-primary mb-1 leading-tight">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
                 </div>
               </div>
             </div>

@@ -1,33 +1,31 @@
 import { Sparkles, Heart, Clock, Star } from "lucide-react";
 
 const items = [
-  { icon: Sparkles, title: "Criança engajada", text: "Atividades lúdicas que capturam a atenção e criam conexão real desde a primeira sessão." },
-  { icon: Heart, title: "Vínculo fortalecido", text: "Recursos pensados para construir confiança e uma relação terapêutica sólida." },
-  { icon: Clock, title: "Menos tempo preparando", text: "Materiais prontos para imprimir ou usar digitalmente — mais tempo para o que importa." },
-  { icon: Star, title: "Pais que indicam", text: "Resultados visíveis que fazem famílias recomendarem seu trabalho naturalmente." }
+  { icon: Sparkles, title: "Criança engajada", text: "Atividades que capturam atenção e criam conexão real desde a 1ª sessão." },
+  { icon: Heart, title: "Vínculo fortalecido", text: "Recursos que constroem confiança e uma relação terapêutica sólida." },
+  { icon: Clock, title: "Menos tempo preparando", text: "Materiais prontos pra imprimir ou usar digitalmente." },
+  { icon: Star, title: "Pais que indicam", text: "Resultados que fazem famílias recomendarem seu trabalho." }
 ];
 
 const WhatChanges = () => {
   return (
-    <section className="py-20 md:py-32 bg-muted">
-      <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[11px] uppercase tracking-[0.2em] text-accent font-semibold">
-            Benefícios
-          </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-primary mt-4 text-balance">
-            O que muda quando você tem o kit <em className="italic">em mãos</em>
+    <section className="py-14 md:py-24 bg-muted">
+      <div className="container mx-auto px-5">
+        <div className="max-w-3xl mx-auto mb-10 md:mb-14">
+          <span className="tape">Benefícios</span>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl text-primary mt-4 font-extrabold leading-tight">
+            O que muda quando o kit está <span className="marker">em mãos</span>.
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-6xl mx-auto">
           {items.map((item, i) => (
-            <div key={i} className="p-7 bg-card rounded-2xl card-premium border border-border/50">
-              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-5 shadow-lg">
-                <item.icon className="h-5 w-5 text-primary-foreground" strokeWidth={2} />
+            <div key={i} className="p-4 md:p-6 bg-card rounded-2xl border border-foreground/10 hover:border-primary/40 transition">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary flex items-center justify-center mb-3 md:mb-4">
+                <item.icon className="h-4 w-4 md:h-5 md:w-5 text-primary-foreground" strokeWidth={2} />
               </div>
-              <h3 className="font-bold text-xl text-primary mb-2 leading-tight">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
+              <h3 className="font-bold text-sm md:text-lg text-primary mb-1 leading-tight">{item.title}</h3>
+              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.text}</p>
             </div>
           ))}
         </div>
