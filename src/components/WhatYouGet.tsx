@@ -52,7 +52,7 @@ const WhatYouGet = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-14 md:mb-20">
             <div className="relative">
               <div className="absolute inset-0 blur-3xl opacity-20" style={{ background: 'var(--gradient-accent)' }} />
-              <img src={mockup} alt="Kit Consultório Lúdico" className="relative w-full h-auto rotate-tiny-l" />
+              <img src={mockup} alt="Kit Consultório Lúdico" loading="lazy" decoding="async" className="relative w-full h-auto rotate-tiny-l" />
             </div>
 
             <div>

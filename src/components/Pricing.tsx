@@ -37,7 +37,7 @@ const Pricing = () => {
                 Kit Básico
               </p>
               <div className="aspect-[4/3] mb-4 flex items-center justify-center">
-                <img src={essentialImg} alt="Kit Básico" className="w-full h-full object-contain" />
+                <img src={essentialImg} alt="Kit Básico" loading="lazy" decoding="async" className="w-full h-full object-contain" />
               </div>
 
               <div className="text-center mb-5">
@@ -93,7 +93,7 @@ const Pricing = () => {
               </div>
 
               <div className="relative aspect-[4/3] mb-4 flex items-center justify-center">
-                <img src={completeImg} alt="Kit Completo" className="w-full h-full object-contain" />
+                <img src={completeImg} alt="Kit Completo" loading="lazy" decoding="async" className="w-full h-full object-contain" />
               </div>
 
               <p className="relative text-center font-bold text-sm md:text-base mb-3">

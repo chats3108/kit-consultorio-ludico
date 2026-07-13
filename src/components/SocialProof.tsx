@@ -41,6 +41,8 @@ const SocialProof = () => {
                     key={i}
                     src={src}
                     alt={`Depoimento ${i + 1}`}
+                    loading="lazy"
+                    decoding="async"
                     className={`absolute inset-0 w-full h-full object-contain bg-white transition-opacity duration-500 ${
                       i === index ? "opacity-100" : "opacity-0"
                     }`}
