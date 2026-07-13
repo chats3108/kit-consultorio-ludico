@@ -28,11 +28,11 @@
     --muted: 155 25% 95%;
     --muted-foreground: 165 15% 38%;
 
-    /* Warm terracotta accent */
-    --accent: 16 82% 58%;
+    /* Teal accent */
+    --accent: 173 58% 39%;
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 16 82% 52%;
-    --accent-glow: 22 88% 66%;
+    --accent-hover: 173 58% 33%;
+    --accent-glow: 173 55% 50%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
