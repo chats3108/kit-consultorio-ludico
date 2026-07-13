@@ -1,24 +1,30 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import QuoteForm from "@/components/QuoteForm";
-import Benefits from "@/components/Benefits";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
+import Preview from "@/components/Preview";
+import ForWhom from "@/components/ForWhom";
+import WhatChanges from "@/components/WhatChanges";
+import DarkSection from "@/components/DarkSection";
+import WhatYouGet from "@/components/WhatYouGet";
+import SocialProof from "@/components/SocialProof";
+import Pricing from "@/components/Pricing";
+import Guarantee from "@/components/Guarantee";
+import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Header />
       <Hero />
-      <About />
-      <Services />
-      <QuoteForm />
-      <Benefits />
-      <Testimonials />
-      <CTA />
+      <Preview />
+      <ForWhom />
+      <WhatChanges />
+      <DarkSection />
+      <WhatYouGet />
+      <SocialProof />
+      <Pricing />
+      <Guarantee />
+      <FAQ />
+      <FinalCTA />
       <Footer />
     </div>
   );
