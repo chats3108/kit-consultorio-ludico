@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
 
           <h1 className="text-center text-[1.75rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-5 max-w-3xl mx-auto">
-            A criança que <span className="marker">pede pra voltar</span> na terapia — é o pai que passa a <span className="marker-primary text-primary">te indicar</span> depois da primeira sessão.
+            <span className="marker-primary text-primary">+80 recursos terapêuticos</span> prontos pra você nunca mais <span className="marker">travar</span> numa sessão infantil.
           </h1>
 
           <p className="text-center text-sm md:text-base text-muted-foreground max-w-lg mx-auto mb-8 leading-relaxed">
