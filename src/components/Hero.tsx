@@ -74,7 +74,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <Button
               size="lg"
-              className="text-sm sm:text-base px-8 py-6 h-auto rounded-full bg-primary hover:bg-primary-hover text-primary-foreground font-bold w-full sm:w-auto max-w-xs sticker"
+              className="text-sm sm:text-base px-8 py-6 h-auto rounded-full bg-accent hover:bg-accent-hover text-accent-foreground font-bold w-full sm:w-auto max-w-xs sticker-accent"
               asChild
             >
               <a href="#pricing">Quero meu kit agora →</a>
