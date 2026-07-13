@@ -26,7 +26,7 @@ const WhatChanges = () => {
               <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-5 shadow-lg">
                 <item.icon className="h-5 w-5 text-primary-foreground" strokeWidth={2} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-2 leading-tight">{item.title}</h3>
+              <h3 className="font-bold text-xl text-primary mb-2 leading-tight">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
             </div>
           ))}

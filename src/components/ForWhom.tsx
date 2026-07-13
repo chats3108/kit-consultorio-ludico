@@ -26,11 +26,11 @@ const ForWhom = () => {
               className="group relative p-8 md:p-10 bg-card rounded-2xl card-premium border border-border/50"
             >
               <div className="flex items-start gap-5">
-                <span className="text-4xl font-serif italic text-accent/80 leading-none">
+                <span className="text-4xl font-bold italic text-accent/80 leading-none">
                   {item.n}
                 </span>
                 <div className="flex-1">
-                  <h3 className="font-serif text-2xl text-primary mb-2 leading-tight">{item.title}</h3>
+                  <h3 className="font-bold text-2xl text-primary mb-2 leading-tight">{item.title}</h3>
                   <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{item.text}</p>
                 </div>
               </div>

@@ -33,7 +33,7 @@ const Pricing = () => {
               <div className="mb-8 pb-8 border-b border-border">
                 <div className="text-sm text-muted-foreground/60 line-through mb-1">De R$ 47,00</div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-serif text-primary">R$ 19,90</span>
+                  <span className="text-5xl font-bold text-primary">R$ 19,90</span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">ou 3x de R$ 6,90</p>
               </div>
@@ -70,7 +70,7 @@ const Pricing = () => {
               <div className="relative mb-8 pb-8 border-b border-white/10">
                 <div className="text-sm text-secondary-foreground/50 line-through mb-1">De R$ 97,00</div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-serif">R$ 37,90</span>
+                  <span className="text-5xl font-bold">R$ 37,90</span>
                 </div>
                 <p className="text-xs text-secondary-foreground/60 mt-2">ou 12x de R$ 3,90</p>
               </div>
