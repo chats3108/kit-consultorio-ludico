@@ -6,39 +6,37 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Como funciona o acesso ao kit?", a: "Assim que a compra for confirmada, você recebe por e-mail o link de acesso a todos os materiais em formato digital. Você pode baixar, imprimir e usar quantas vezes quiser." },
-  { q: "Preciso ser psicóloga formada para usar?", a: "O kit foi desenvolvido para psicólogos e psicólogas, mas outros profissionais da área de saúde e educação infantil também podem se beneficiar dos materiais." },
-  { q: "Os materiais são impressos ou digitais?", a: "Todos os recursos são digitais (PDF). Você pode imprimir os que preferir usar em papel ou usar digitalmente em atendimentos online via tablet." },
-  { q: "Funciona para atendimento online?", a: "Sim! Os materiais são perfeitos tanto para atendimento presencial quanto online. Muitas atividades já foram pensadas para uso em telas." },
-  { q: "Tem garantia?", a: "Sim, oferecemos garantia incondicional de 7 dias. Se não gostar, devolvemos 100% do seu dinheiro." },
-  { q: "Vou receber atualizações?", a: "Sim! Todos os novos recursos adicionados ao kit são liberados gratuitamente para quem já é cliente do Kit Completo." }
+  { q: "Como funciona o acesso ao kit?", a: "Confirmada a compra, você recebe por e-mail o link de acesso a todos os materiais em formato digital. Baixe, imprima e use quantas vezes quiser." },
+  { q: "Preciso ser psicóloga formada pra usar?", a: "O kit foi feito pra psicólogos(as), mas outros profissionais da saúde e educação infantil também se beneficiam." },
+  { q: "Os materiais são impressos ou digitais?", a: "Todos os recursos são digitais (PDF). Imprima os que preferir ou use digitalmente no tablet em atendimentos online." },
+  { q: "Funciona pro online?", a: "Sim. Muitas atividades já foram pensadas pra uso em telas." },
+  { q: "Tem garantia?", a: "Sim, garantia incondicional de 7 dias. Se não gostar, devolvemos 100%." },
+  { q: "Vou receber atualizações?", a: "Sim. Todos os novos recursos do Kit Completo são liberados de graça pra quem já é cliente." }
 ];
 
 const FAQ = () => {
   return (
-    <section className="py-20 md:py-32 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-14 md:py-24 bg-background">
+      <div className="container mx-auto px-5">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-14">
-            <span className="text-[11px] uppercase tracking-[0.2em] text-accent font-semibold">
-              Dúvidas
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-primary mt-4 text-balance">
-              Perguntas <em className="italic">Frequentes</em>
+          <div className="mb-8 md:mb-12">
+            <span className="tape">Dúvidas</span>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl text-primary mt-4 font-extrabold leading-tight">
+              Perguntas <span className="marker">frequentes</span>.
             </h2>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="single" collapsible className="space-y-2.5">
             {faqs.map((faq, i) => (
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
-                className="bg-card border border-border rounded-2xl px-6 shadow-sm transition-all data-[state=open]:shadow-lg data-[state=open]:border-primary/20"
+                className="bg-card border-2 border-foreground/10 rounded-xl px-4 md:px-5 data-[state=open]:border-primary/60"
               >
-                <AccordionTrigger className="text-left font-medium text-primary hover:no-underline text-base py-5">
+                <AccordionTrigger className="text-left font-semibold text-primary hover:no-underline text-sm md:text-base py-4">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm md:text-base text-muted-foreground pb-5 leading-relaxed">
+                <AccordionContent className="text-sm text-muted-foreground pb-4 leading-relaxed">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
