@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import essentialImg from "@/assets/kit/mockupsembonus.webp";
+import completeImg from "@/assets/kit/mockuptudo.webp";
 
 const Pricing = () => {
   return (
