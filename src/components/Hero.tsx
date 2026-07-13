@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Printer, FolderOpen, Layers, Monitor } from "lucide-react";
-import mockupAsset from "@/assets/kit/mockuptudo.webp.asset.json";
-const mockup = mockupAsset.url;
+import mockup from "@/assets/kit/mockuptudo.webp";
 
 const Hero = () => {
   const features = [
