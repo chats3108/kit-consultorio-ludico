@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import essentialImg from "@/assets/kit/mockupsembonus.webp";
+import completeImg from "@/assets/kit/mockuptudo.webp";
 
 const Pricing = () => {
   return (
@@ -21,13 +23,17 @@ const Pricing = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Essential */}
             <div className="p-8 md:p-10 bg-card rounded-3xl border border-border shadow-lg card-premium">
-              <h3 className="font-serif text-2xl text-primary mb-1">Kit Essencial</h3>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-muted mb-6 flex items-center justify-center">
+                <img src={essentialImg} alt="Kit Essencial" className="w-full h-full object-contain p-4" />
+              </div>
+              <h3 className="font-bold text-2xl text-primary mb-1">Kit Essencial</h3>
               <p className="text-sm text-muted-foreground mb-8">Recursos fundamentais</p>
+
 
               <div className="mb-8 pb-8 border-b border-border">
                 <div className="text-sm text-muted-foreground/60 line-through mb-1">De R$ 47,00</div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-serif text-primary">R$ 19,90</span>
+                  <span className="text-5xl font-bold text-primary">R$ 19,90</span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">ou 3x de R$ 6,90</p>
               </div>
@@ -50,17 +56,21 @@ const Pricing = () => {
             <div className="relative p-8 md:p-10 bg-secondary text-secondary-foreground rounded-3xl shadow-2xl overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white/5 mb-6 flex items-center justify-center">
+                <img src={completeImg} alt="Kit Completo" className="w-full h-full object-contain p-4" />
+              </div>
+
               <span className="relative inline-flex items-center gap-1.5 bg-accent text-accent-foreground text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-4">
                 ⭐ Mais Escolhido
               </span>
 
-              <h3 className="relative font-serif text-2xl mb-1">Kit Completo</h3>
+              <h3 className="relative font-bold text-2xl mb-1">Kit Completo</h3>
               <p className="relative text-sm text-secondary-foreground/60 mb-8">Tudo que você precisa</p>
 
               <div className="relative mb-8 pb-8 border-b border-white/10">
                 <div className="text-sm text-secondary-foreground/50 line-through mb-1">De R$ 97,00</div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-serif">R$ 37,90</span>
+                  <span className="text-5xl font-bold">R$ 37,90</span>
                 </div>
                 <p className="text-xs text-secondary-foreground/60 mt-2">ou 12x de R$ 3,90</p>
               </div>
