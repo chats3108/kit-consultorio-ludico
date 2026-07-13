@@ -55,7 +55,7 @@ const Pricing = () => {
                 className="w-full h-12 font-bold rounded-full bg-muted-foreground/70 hover:bg-muted-foreground text-white mb-5"
                 asChild
               >
-                <a href="#">Quero o kit básico</a>
+                <a href="https://pay.wiapy.com/ma6vmDYA9Y9W" target="_blank" rel="noopener noreferrer">Quero o kit básico</a>
               </Button>
 
               <ul className="space-y-2.5 text-sm mb-5">
@@ -117,7 +117,7 @@ const Pricing = () => {
                 className="relative w-full h-12 font-bold rounded-full bg-accent hover:bg-accent/90 text-accent-foreground mb-5"
                 asChild
               >
-                <a href="#">Quero o kit completo</a>
+                <a href="https://pay.wiapy.com/_d6UG-wqonnq" target="_blank" rel="noopener noreferrer">Quero o kit completo</a>
               </Button>
 
               <ul className="relative space-y-2.5 text-sm mb-4">
