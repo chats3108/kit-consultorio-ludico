@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Check, Gift, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import essentialImg from "@/assets/kit/mockupsembonus.webp";
-import completeImg from "@/assets/kit/mockuptudo.webp";
+import completeImgAsset from "@/assets/kit/mockuptudo.webp.asset.json";
+const completeImg = completeImgAsset.url;
 
 const bonusItems = [
   { title: "Fichas de Anamnese Infantil", price: "R$ 27,00" },
