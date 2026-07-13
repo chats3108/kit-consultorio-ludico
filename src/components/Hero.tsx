@@ -44,6 +44,10 @@ const Hero = () => {
               <img
                 src={mockup}
                 alt="Kit Consultório Lúdico"
+                width={720}
+                height={720}
+                fetchPriority="high"
+                decoding="async"
                 className="relative w-full max-w-[320px] sm:max-w-md md:max-w-xl h-auto"
               />
               {/* pinned label */}

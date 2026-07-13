@@ -20,7 +20,7 @@ const DarkSection = () => {
           <div className="grid grid-cols-2 gap-3 md:gap-5">
             {[recurso2, recurso3].map((src, i) => (
               <div key={i} className={`relative rounded-2xl overflow-hidden sticker-accent ${i === 0 ? "rotate-tiny-l" : "rotate-tiny-r"}`}>
-                <img src={src} alt="Recurso" className="w-full block" />
+                <img src={src} alt="Recurso" loading="lazy" decoding="async" className="w-full block" />
               </div>
             ))}
           </div>
