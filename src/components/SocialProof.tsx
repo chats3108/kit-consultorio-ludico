@@ -4,18 +4,20 @@ import dep4 from "@/assets/kit/dep4.webp";
 
 const SocialProof = () => {
   return (
-    <section className="py-12 md:py-20 bg-muted">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">
-            Psicólogas que já usaram o kit — e já
-            <span className="text-accent"> sentem a diferença</span> nos seus atendimentos
+    <section className="py-20 md:py-32 bg-muted">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="text-[11px] uppercase tracking-[0.2em] text-accent font-semibold">
+            Depoimentos
+          </span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl text-primary mt-4 text-balance">
+            Psicólogas que já usaram o kit — e já sentem a <em className="italic">diferença</em>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[dep1, dep2, dep4].map((src, i) => (
-            <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-card">
+            <div key={i} className="bg-card rounded-2xl overflow-hidden card-premium border border-border/50">
               <img src={src} alt={`Depoimento ${i + 1}`} className="w-full h-auto" />
             </div>
           ))}
