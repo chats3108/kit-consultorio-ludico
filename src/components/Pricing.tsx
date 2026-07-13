@@ -23,8 +23,12 @@ const Pricing = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Essential */}
             <div className="p-8 md:p-10 bg-card rounded-3xl border border-border shadow-lg card-premium">
-              <h3 className="font-serif text-2xl text-primary mb-1">Kit Essencial</h3>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-muted mb-6 flex items-center justify-center">
+                <img src={essentialImg} alt="Kit Essencial" className="w-full h-full object-contain p-4" />
+              </div>
+              <h3 className="font-bold text-2xl text-primary mb-1">Kit Essencial</h3>
               <p className="text-sm text-muted-foreground mb-8">Recursos fundamentais</p>
+
 
               <div className="mb-8 pb-8 border-b border-border">
                 <div className="text-sm text-muted-foreground/60 line-through mb-1">De R$ 47,00</div>
