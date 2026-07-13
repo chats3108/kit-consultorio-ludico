@@ -29,8 +29,8 @@ const Hero = () => {
             Gastando com materiais que você quase não usa?
           </p>
 
-          <h1 className="text-center text-[1.75rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-5 max-w-3xl mx-auto">
-            <span className="marker-primary text-primary">+80 recursos terapêuticos</span> prontos pra você nunca mais <span className="marker">travar</span> numa sessão infantil.
+          <h1 className="text-center text-[1.55rem] leading-[1.3] sm:text-4xl sm:leading-[1.15] md:text-5xl lg:text-6xl font-extrabold text-foreground mb-4 sm:mb-5 max-w-3xl mx-auto text-balance">
+            <span className="text-primary">+80 recursos terapêuticos</span> prontos pra você nunca mais <span className="text-accent">travar</span> numa sessão infantil.
           </h1>
 
           <p className="text-center text-sm md:text-base text-muted-foreground max-w-lg mx-auto mb-8 leading-relaxed">
