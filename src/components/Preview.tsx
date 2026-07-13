@@ -32,6 +32,8 @@ const Preview = () => {
                 <img
                   src={src}
                   alt={`Atividade ${(i % items.length) + 1}`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
