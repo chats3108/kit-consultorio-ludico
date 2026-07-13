@@ -1,92 +1,74 @@
 import { Button } from "@/components/ui/button";
-import { Check, Sparkles } from "lucide-react";
+import { Zap, Printer, FolderOpen, Layers, Monitor } from "lucide-react";
 import mockup from "@/assets/kit/mockuptudo.webp";
 
 const Hero = () => {
+  const features = [
+    { icon: Zap, text: "Acesso imediato após a compra" },
+    { icon: Printer, text: "Imprime e usa na mesma sessão" },
+    { icon: FolderOpen, text: "Organizado por demanda clínica" },
+    { icon: Layers, text: "+80 recursos prontos pra usar" },
+    { icon: Monitor, text: "Funciona online e presencial" },
+  ];
+
   return (
-    <>
-      {/* Top banner */}
-      <div className="bg-secondary text-secondary-foreground text-center py-2.5 px-4 text-[11px] sm:text-xs font-medium tracking-[0.15em] uppercase">
-        <span className="inline-flex items-center gap-2">
-          <Sparkles className="h-3 w-3 text-accent" />
-          Oferta especial por tempo limitado
-        </span>
-      </div>
+    <section className="relative overflow-hidden bg-background">
+      <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
 
-      <section className="relative overflow-hidden" style={{ background: 'var(--gradient-hero)' }}>
-        <div className="absolute inset-0" style={{ background: 'var(--gradient-mesh)' }} />
+      <div className="container mx-auto px-6 py-16 md:py-24 relative">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-sm md:text-base font-semibold text-muted-foreground mb-6 animate-fade-up">
+            Gastando com materiais terapêuticos que você quase não usa?
+          </p>
 
-        <div className="container mx-auto px-6 py-16 md:py-24 lg:py-32 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 animate-fade-up">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              <span className="text-xs font-medium text-foreground/70 tracking-wide">
-                Mais de 2.000 psicólogas atendidas
-              </span>
-            </div>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase text-foreground leading-[1.1] mb-8 animate-fade-up stagger-1">
+            A criança que <span className="text-primary">pede pra voltar</span> na terapia — é o pai que passa a <span className="text-primary">te indicar</span> depois da primeira sessão
+          </h1>
 
-            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl text-primary text-balance leading-[1.05] mb-8 animate-fade-up stagger-1">
-              A criança que pede pra voltar<br className="hidden sm:block" />
-              na terapia — é o pai que<br className="hidden sm:block" />
-              passa a <em className="italic text-accent">te indicar</em> depois da<br className="hidden sm:block" />
-              primeira sessão
-            </h1>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-up stagger-2">
+            Um kit completo de recursos lúdicos, criativos e profissionais para você atender crianças com segurança, leveza e resultado.
+          </p>
 
-            <div className="my-12 md:my-16 flex justify-center animate-scale-in stagger-2">
-              <div className="relative">
-                <div
-                  className="absolute inset-0 blur-3xl opacity-40 animate-float"
-                  style={{ background: 'var(--gradient-accent)' }}
-                />
-                <img
-                  src={mockup}
-                  alt="Kit Consultório Lúdico"
-                  className="relative w-full max-w-md md:max-w-xl h-auto drop-shadow-2xl"
-                />
-              </div>
-            </div>
-
-            <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed text-pretty animate-fade-up stagger-3">
-              Um kit completo de recursos lúdicos, criativos e profissionais para você
-              atender crianças com <span className="text-foreground font-medium">segurança, leveza e resultado</span>.
-            </p>
-
-            <div className="space-y-3 max-w-sm mx-auto mb-10 text-left animate-fade-up stagger-4">
-              {[
-                "Mais de 200 recursos prontos para usar",
-                "Materiais para diferentes idades e demandas",
-                "Acesso imediato após a compra"
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="h-3 w-3 text-primary stroke-[3]" />
-                  </div>
-                  <span className="text-sm text-foreground/80">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="animate-fade-up stagger-5">
-              <Button
-                size="lg"
-                variant="accent"
-                className="text-base px-10 py-7 h-auto w-full sm:w-auto font-semibold tracking-wide"
-                asChild
-              >
-                <a href="#pricing">
-                  Quero o kit agora
-                  <span className="ml-1">→</span>
-                </a>
-              </Button>
-
-              <p className="text-[11px] uppercase tracking-widest text-muted-foreground/70 mt-6 font-medium">
-                Pagamento seguro • Garantia de 7 dias
-              </p>
+          <div className="my-10 md:my-14 flex justify-center animate-scale-in stagger-3">
+            <div className="relative">
+              <div
+                className="absolute inset-0 blur-3xl opacity-40 animate-float"
+                style={{ background: 'var(--gradient-accent)' }}
+              />
+              <img
+                src={mockup}
+                alt="Kit Consultório Lúdico"
+                className="relative w-full max-w-lg md:max-w-2xl h-auto drop-shadow-2xl"
+              />
             </div>
           </div>
+
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 max-w-4xl mx-auto animate-fade-up stagger-4">
+            {features.map(({ icon: Icon, text }, i) => (
+              <div key={i} className="flex items-center gap-2 text-sm text-foreground/80">
+                <Icon className="h-5 w-5 text-primary shrink-0" />
+                <span className="font-medium">{text}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="italic text-muted-foreground max-w-xl mx-auto mb-8 animate-fade-up stagger-5">
+            Chega de gastar horas procurando material.<br />
+            Você vai ter a ferramenta certa pra cada criança.
+          </p>
+
+          <div className="animate-fade-up stagger-5">
+            <Button
+              size="lg"
+              className="text-base px-10 py-7 h-auto rounded-full bg-primary hover:bg-primary-hover text-primary-foreground font-semibold"
+              asChild
+            >
+              <a href="#pricing">Quero meu kit agora</a>
+            </Button>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
